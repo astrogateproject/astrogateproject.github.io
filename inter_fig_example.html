@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            canvas {
+                background-color: black;
+                border: 5px solid black;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- všechna tlačítka -->
+        <p>
+            <button onclick="area()">Opsaná plocha</button>
+            <button onclick="area_time_interval()">Plocha opsaná za 3 sekundy</button>
+            <button onclick="resetfunction()">Smazat plochy</button>
+        </p>
+        <p>
+            <label for="myCheck_pruvodic">Průvodič:</label> 
+            <input type="checkbox" id="myCheck_pruvodic" onclick="connection()">
+            <label for="myCheck_rychlost">Šipka rychlosti:</label> 
+            <input type="checkbox" id="myCheck_rychlost" onclick="show_arrow()">
+            <label for="myCheck_perihelium">Perihélium:</label> 
+            <input type="checkbox" id="myCheck_perihelium" onclick="periheliu_show()">
+            <label for="myCheck_afelium">Afélium:</label> 
+            <input type="checkbox" id="myCheck_afelium" onclick="afelium_show()">
+        </p> 
+        <canvas id="animationCanvas" width="400" height="450" style="border: 1px solid black;"></canvas>
+        <!-- odtud dál dolů je javascript kód javascript -->
+        <script src="javascript01.js"></script>
+
+    </body> 
+</html>

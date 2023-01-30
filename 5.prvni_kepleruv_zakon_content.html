@@ -32,7 +32,7 @@
             <p class="definice">Planety se pohybují kolem Slunce po elipsách, málo odlišných od kružnic. Elipsy planet mají společné ohnisko, v němž se nachází Slunce. Druhá ohniska elips zůstávají prázdná.</p>
             
             <figure>
-                <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Slunce a planety">
+                <img src="ASSETS/1.6.1.-animation-solarSystem_anim.svg" alt="Slunce a planety">
                 <figcaption>Obr.1 - Planety se pohybují kolem Slunce po elipsách, které jsou téměr kružnice - 1. Keplerův zákon</figcaption>
             </figure>
 
@@ -67,8 +67,8 @@
                 Trajektorie planet ve sluneční soustavě jsou tím pádem velmi málo protáhlé elipsy, které vypadají skoro jako kružnice.
             </p>
 
-            <figure>
-                <img src="ASSETS/1.6.2-table.png" alt="Astronomia Nova">
+            <figure> 
+                <img src="ASSETS/1.6.2.-table-planets_excent.svg" alt="Astronomia Nova" style="width:80%">
                 <figcaption>Obr.2 - Tabulka excentricit</figcaption>
             </figure>
 
@@ -79,8 +79,8 @@
             </p>
 
             <figure>
-                <img src="ASSETS/1.6.2-ellipses.png" alt="Protáhlé elipsy">
-                <figcaption>Obr.3 - Slunce leží ve společném ohnisku elips (elipsy jsou zde protáhlejší než doopravdy ve Sluneční soustavě jsou)</figcaption>
+                <img src="ASSETS/1.6.2.-animation-shared_focalPoint.svg" alt="Protáhlé elipsy">
+                <figcaption>Obr.3 - Slunce leží ve společném ohnisku elips (elipsy jsou zde protáhlejší než doopravdy ve sluneční soustavě jsou)</figcaption>
             </figure>
 
             <a href="#section1">
@@ -111,15 +111,39 @@
         <div class="whiteboard whiteparag">
             <p>Bod na elipse, kdy se planeta nachází <b>nejblíže ke Slunci</b>, se nazývá <b>perihélium (přísluní)</b> a tuto vzdálenost značíme <h:math>r<sub>p</sub></h:math>.</p>
             
+
+            <figure>
+                <img src="ASSETS/1.6.3.-illustration-afelium.svg" alt="afélium" style="width:80%">
+                <figcaption>Obr.4 - Afélium - bod elipsy nejdále od Slunce</figcaption>
+            </figure>
+    
+
             <p>Bod na elipse, kde se planeta naopak nachází <b>nejdále od Slunce</b>, se nazývá <b>afélium (odsluní)</b> a tuto vzdálenost značíme <h:math>r<sub>a</sub></h:math>.</p>
-            
-            <p>Z vlastností elipsy potom vyplývá že</p>
-            $$
-            {r_p = a-e}
-            $$
+
+            <figure>
+                <img src="ASSETS/1.6.3.-illustration-perihelium.svg" alt="perihélium" style="width:80%">
+                <figcaption>Obr.5 - Perihélium - bod elipsy nejblíže k Slunci</figcaption>
+            </figure>
+
+
+            <p>Vzdálenost k aféliu snadno vyjádříme pomocí hlavní poloosy a (délkové) výstřednosti</p>
             $$
             {r_a = a+e}
             $$
+            <figure>
+                <img src="ASSETS/1.6.3.-illustration-afelium_relations.svg" alt="afélium a jeho vzdálenost ke Slunci" style="width:65%">
+                <figcaption>Obr.6- Vzdálenost afélia ke Slunci</figcaption>
+            </figure>
+            <p>Podobný vztah můžeme napsat pro vzdálenost perihélia ke Slunci</p>
+            $$
+            {r_p = a-e}
+            $$
+            <figure>
+                <img src="ASSETS/1.6.3.-illustration-perihelium_relations.svg" alt="perihélium a jeho vzdálenost ke Slunci" style="width:65%">
+                <figcaption>Obr.7 - Vzdálenost perihélia ke Slunci</figcaption>
+            </figure>
+
+
 
             <a href="#section2">
                 <div class="arrow-up"></div>
@@ -153,9 +177,15 @@
         <div class="whiteboard whiteparag">
             <p>První Keplerův zákon zároveň říká, že pohyb planety je rovinný, protože opisuje elipsu. Elipsa je totiž křivka, která vždy leží v nějaké rovině. </p>
             
-            <p>Rovinu, na níž planeta obíhá Slunce, nazýváme <b>oběžná rovina</b>.</p>
+            <p>Rovinu, v níž planeta obíhá Slunce, nazýváme <b>oběžná rovina</b>.</p>
             
-            <p>Oběžné roviny jsou pro různé planety odlišné. Například Mars má jinou oběžnou rovinu než Země. Avšak oběžné roviny jednotlivých planet jsou vůči sobě minimálně nakloněné a pootočené. Všechny tyto oběžné roviny však mají Slunce jako svůj společný bod.</p>
+            <p>Oběžné roviny jsou pro různé planety odlišné. Například Mars má jinou oběžnou rovinu než Země. Avšak oběžné roviny jednotlivých planet jsou vůči sobě minimálně nakloněné. Všechny tyto oběžné roviny však mají Slunce jako svůj společný bod.</p>
+
+            <figure>
+                <img src="ASSETS/1.6.4.-illustration-orbital_planes.svg" alt="oběžné roviny jednotlivých planet" style="width:80%">
+                <figcaption>Obr.8 - Oběžné roviny planet jsou v principu různé</figcaption>
+            </figure>
+
 
 
             <a href="#section3">
@@ -195,6 +225,19 @@
             
             <p>Naklonění Zemské osy vůči kolmici na rovinu ekliptiky má za následek 
                 <b>střídání ročních období</b> – v létě je severní polokoule Země osvětlena více než je v zimě, a tak na ni dopadá více energie, která polokouli zahřívá.</p>
+
+            
+            <figure>
+                <img src="ASSETS/1.6.5.-illustration-eclipticPlane.svg" alt="rovina ekliptiky" style="width:80%">
+                <figcaption>Obr.9 - Rovina ekliptiky (oběžná rovina Země kolem Slunce), zemská osa</figcaption>
+            </figure>
+
+            <figure>
+                <img src="ASSETS/1.6.5.-illustration-eclipticPlane_seasons.svg" alt="rovina ekliptiky"  style="width:100%">
+                <figcaption>Obr.10 - Skloněnná zemská osa vůči rovině ekliptiky má za následky střídání ročních období</figcaption>
+            </figure>
+
+
 
             <a href="#section4">
                 <div class="arrow-up"></div>

@@ -249,11 +249,90 @@
 
 
 
+
+
+
+
+
+
+        <div class="whiteboard_title" id="section5">
+            <h2>Interaktivní ilustrace</h2>
+            
+            <div class="bookmark5">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+
+        </div>
+        <div class="whiteboard whiteparag">
+            
+            <p>Abychom si pohyb planety kolem Slunce dokázali ještě více představit, je níže přiložena interaktivní ilustrace takovéhoto pohybu.</p>
+
+            <div class="inter_fig">
+                <iframe src="inter_fig_example.html" height="600" width="450" style="border:none;" title="Pohyb planety kolem Slunce" frameBorder="0"></iframe>
+            </div>
+            <div class="popisek_k_interaktivni_ilustraci">
+                <h3>Popisek:</h3>
+                <br>
+                <p>Obrázek má dva interaktivní prvky: Bod (<i>Prázdné ohnisko</i>) a červenou křivku (elipsu, trajektorii planety).</p> 
+                <ul class="description">
+                    <li>V obrázku můžete táhnout s bodem <i>Prázdné ohnisko</i>, čímž nastavíte protáhlost elipsy.</li>
+                    <li>Velikost elipsy lze měnit tažením za elipsu (červenou křivku).</li>
+                </ul>
+                <p>Nad obrázkem jsou k dispozici checkboxy, které mají funkce:</p>
+                <ul class="description">
+                    <li><i>Průvodič</i> - zobrazí se průvodič (spojnice planety a Slunce)</li>
+                    <li><i>Šipka rychlosti</i> - zobrazí se rychlost planety po své trajektorii (kterou je elipsa)</li>
+                    <li><i>Perihélium</i> - zobrazí se perihélium (přísluní, bod nejbližší Slunci na elipse)</li>
+                    <li><i>Afélium</i> - zobrazí se afélium (odsluní, bod nejdále Slunci na elipse)</li>
+                </ul>
+                <p>Nad obrázkem jsou k dispozici tlačítka, které mají funkce:</p>
+                <ul class="description">
+                    <li><i>Opsaná plocha</i> - plocha opsaná průvodičem za libovolně dlouhou dobu (2. stisk ukončí vykreslování)</li>
+                    <li><i>Plocha opsaná za 3 sekundy</i> -  plocha opsaná průvodičem během 3 sekund</li>
+                    <li><i>Smazat plochy</i> - smaže poslední plochu</li>
+                </ul>
+                <p>V obrázku jsou vykreslovány veličiny:</p>
+                <ul class="description">
+                    <li><i>vp</i> - rychlost v perihéliu</li>
+                    <li><i>va</i> - rychlost v aféliu</li>
+                    <li><i>v</i> - okamžitá rychlost planety</li>
+                    <li><i>&epsilon;</i> - číselná výstřednost (numerická excentricita) elipsy</li>
+                </ul>
+            </div>
+
+
+
+
+
+            <a href="#section4">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section6">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
         
-        <div class="whiteboard_title " id="section5">
+        <div class="whiteboard_title " id="section6">
             <h2>K procvičení</h2>
 
-            <div class="bookmark5">
+            <div class="bookmark6">
                 <svg width="12" height="12">
                       <path d="M   0   0
                                L 12   0
@@ -291,7 +370,7 @@
             <p id="score"></p>
             -->
 
-            <a href="#section4">
+            <a href="#section5">
                 <div class="arrow-up"></div>
             </a>
         </div>
@@ -364,6 +443,10 @@
               });
               var acc5 = document.getElementsByClassName("bookmark5");
               acc5[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc6 = document.getElementsByClassName("bookmark6");
+              acc6[0].addEventListener("click", function() {
                 this.classList.toggle("active");
               });
         </script>

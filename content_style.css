@@ -299,3 +299,17 @@ input[type="submit"]:hover{
     box-shadow: -1px 0 10px #000000;
 
 }
+
+.inter_fig{
+    display: flex;
+    justify-content: center;
+ }
+
+.popisek_k_interaktivni_ilustraci li{
+    list-style-type: circle;
+    margin-bottom: 15px;
+}
+
+.popisek_k_interaktivni_ilustraci ul{
+    padding-left: 15px;
+}
