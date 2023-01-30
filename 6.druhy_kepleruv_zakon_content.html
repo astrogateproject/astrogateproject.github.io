@@ -1,0 +1,374 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content_style.css">     
+</head>
+<body>
+    
+
+    <div class="main_content">
+        <div class="whiteboard_title" id="section1">
+            <h2>Define</h2>
+            
+            <div class="bookmark1">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            <p>Druhému Keplerovu zákonu se také přezdívá <b>zákon ploch</b> a zní následovně:</p>
+            <p class="definice">Spojnice středu planety a Slunce opíše za stejné časy plochy o stejném obsahu.</p>
+            <p>Spojnice středů Slunce a planety se nazývá <b>průvodič</b>. Pokud bychom sledovali pohyb planety <b>po dobu <i class="mathsymb">t</i></b>, opíše průvodič plochu o <b>obsahu <i class="mathsymb">S</i></b>. </p>
+            <p>Když budeme kdykoliv později sledovat tuto planetu <b>po stejnou dobu <i class="mathsymb">t</i></b>, opíše průvodič obecně sice jinou plochu, ale o <b>stejném obsahu <i class="mathsymb">S</i></b>.</p>            
+            
+            <a href="#section2">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+
+        <div class="whiteboard_title" id="section2">
+            <h2>Rychlosti v perihéliu a aféliu</h2>
+            
+            <div class="bookmark2">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+
+        </div>
+        <div class="whiteboard whiteparag">
+            <p>Druhý Keplerův zákon má také zajímavé důsledky pro <b>rychlosti planet</b>. Pokud se planeta pohybuje po elipse, bude mít v <b>různých místech</b> na své trajektorii obecně <b>různou rychlost</b>. 
+                Obecně platí, že <b>v perihéliu</b> (nejblíže Slunci) je rychlost planety <b>větší než v aféliu</b> (nejdále od Slunce).</p>
+            
+            <p>Speciálním případem je potom kružnice, po níž se planeta pohybuje všude se stejnou rychlostí.</p>
+            
+            <a href="#section1">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section3">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+
+          
+
+        <div class="whiteboard_title" id="section3">
+            <h2>Výpočet rychlostí v perihéliu a aféliu</h2>
+
+            <div class="bookmark3">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            <p>Poměr rychlostí při průletu perihéliem a aféliem se dá určit s pomocí druhého Keplerova zákona.</p>
+            
+            <p>Představme si, že planeta zrovna prolétá nejblíže ke Slunci, tedy v okolí perihélia <h:math>P</h:math>, 
+                a za krátký čas <i class="mathsymb">t</i> opíše průvodič malou plochu <i class="mathsymb">S</i>. Čím kratší je doba <i class="mathsymb">t</i>, 
+                tím více se bude plocha s obsahem <i class="mathsymb">S</i> podobat trojúhelníku o obsahu <i class="mathsymb">S<sub>p</sub></i>.</p>
+
+            <p>Vzniklý trojúhelník je <b>pravoúhlý</b> a bod <h:math>B</h:math> ve skutečnosti <b>neleží na elipse</b>, ale trochu mimo ni.</p>
+
+            <p>Nicméně při <b> velmi krátké době <i class="mathsymb">t</i> </b> bude <b>rozdíl</b> mezi plochou tohoto trojúhelníku o obsahu <i class="mathsymb">S<sub>p</sub></i> a skutečnou plochou o obsahu <i class="mathsymb">S</i> opsanou 
+                průvodičem zanedbatelný. S poměrně velkou přesností tedy platí <i class="mathsymb">S<sub>p</sub></i>=<i class="mathsymb">S</i>. Je to vlastně takový trik, jak si s tento výpočet usnadnit, 
+                kde důležitou roli hraje ta velmi krátká doba t.</p>
+            
+            <p>Plocha <i class="mathsymb">S<sub>p</sub></i> takto vzniklého trojúhelníku je dána vztahem:</p>
+            $${  S_p = \frac{1}{2}r_p v_p t  }$$
+
+            <p>kde <i class="mathsymb">v<sub>p</sub></i> je vzdálenost, kterou planeta urazí za čas <i class="mathsymb">t</i> při rychlosti <i class="mathsymb">v<sub>p</sub></i>. 
+                Trajektorie, kterou planeta za tento krátký čas urazí, 
+                lze považovat za krátkou úsečku. Ta tvoří <b>kratší odvěsnu</b> vzniklého pravoúhlého trojúhelníku.</p>
+
+            <p><i class="mathsymb">r<sub>p</sub></i> je <b>vzdálenost planety (v perihéliu) od Slunce</b>. Tato vzdálenost zase tvoří <b>delší odvěsnu</b> vzniklého pravoúhlého trojúhelníku.</p>
+
+            <p><b>Obsah</b> jakéhokoli <b>pravoúhlého trojúhelníku</b> zjistíme tak, že mezi sebou nejdříve vynásobíme jeho odvěsny. 
+                Tím dostaneme obsah obdélníku, který stačí vydělit dvěma. Rovnicí by se to vyjádřilo následovně:</p>
+                $$
+                    \frac{\mathrm{prvni~odvesna}\times{\mathrm{druha~odvesna}}}{2}
+                $$
+            <p>Podobný trojúhelník můžeme zkonstruovat i pro <b>průchod planety aféliem</b>, tedy nejdále od Slunce. 
+                Takový trojúhelník má obsah daný vztahem</p>
+                $$
+                    S_a = \frac{1}{2}r_a v_a t 
+                $$
+            <p><i class="mathsymb">r<sub>a</sub></i> je vzdálenost planety od Slunce</p>
+            <p><i class="mathsymb">v<sub>a</sub></i> je rychlost planety při průletu aféliem</p>
+
+            <p>
+                Pokud jsou <b>obě plochy</b> opsány za <b>stejný čas <i class="mathsymb">t</i></b>, tak musí být jejich <b>obsahy</b> podle druhého Keplerova zákona <b>stejné</b>:
+            </p>
+            $$
+                {S_a = S_p}
+            $$
+            $$
+                {  \frac{1}{2}r_a v_a t = \frac{1}{2}r_p v_p t   }
+            $$
+
+            <p>Po vykrácení rovnice z toho dostáváme</p>
+            $$
+                { r_a v_a = r_p v_p  }
+            $$
+            $$
+                \frac{v_p}{v_a} = \frac{r_a}{r_p}
+            $$
+
+            <p>Z toho plyne, že kolikrát je planeta při průchodu perihéliem <b>blíže ke Slunci</b> než v aféliu, tolikrát tam bude mít <b>větší rychlost</b>.</p>
+
+            <a href="#section2">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section4">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+
+        <div class="whiteboard_title" id="section4">
+            <h2>Plošná rychlost</h2>
+            
+            <div class="bookmark4">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+
+        </div>
+        <div class="whiteboard whiteparag">
+            <p>
+                <b>Plošná rychlost</b>, kterou budeme značit <i class="mathsymb">w</i>, je obsah <b>plochy <i class="mathsymb">S</i></b> opsané průvodičem za <b> velmi krátký čas <i class="mathsymb">t</i></b>. 
+                Oproti tomu, když se běžně bavíme o rychlosti <i class="mathsymb">v</i>,  tak ta udává <b>vzdálenost</b> opsanou za určitý <b>čas</b>. 
+            </p>
+            
+            <p>Plošnou rychlost bychom v rovnici vyjádřili následovně:</p>
+
+            $$
+                { w=\frac{S}{t}  }
+            $$
+            
+            <p>Z druhého Keplerova zákona plyne, že <b>plošná rychlost</b> je konstanta, což znamená, že je pro danou planetu pořád <b>stejná</b>.</p>
+
+            <p>Například v perihéliu a aféliu jsou obsahy ploch opsaných za stejné a velmi malé časy <i class="mathsymb">t</i>:</p>
+            $$
+                S_a = \frac{1}{2}r_a v_a t 
+            $$
+            $$
+                S_p = \frac{1}{2}r_p v_p t 
+            $$
+            <p>a tedy odpovídající plošné rychlosti jsou:</p>
+            $$
+                w_a = \frac{1}{2}r_a v_a 
+            $$
+            $$
+                w_p = \frac{1}{2}r_p v_p 
+            $$
+            <p>Vztahy pro obsahy lze tak přepsat do podoby:</p>
+            $$
+                S_a = w_a t 
+            $$
+            $$
+                S_p = w_p t  
+            $$
+            <p>Druhý Keplerův zákon říká:</p>
+            $$
+                S_a = S_p
+            $$
+            <p>a proto</p>
+            $$
+                w_a t = w_p t 
+            $$
+            <p>Po vykrácení <i class="mathsymb">t</i> na obou stranách dostáváme:</p>
+            $$
+                w_a = w_p
+            $$
+            <p>
+            Plošné rychlosti v perihéliu a aféliu jsou tedy stejné. Dá se ale ukázat, že toto pravidlo platí pro všechny body na eliptické trajektorii 
+            dané planety. Takže například pro libovolný bod <h:math>X</h:math> na trajektorii, kde by planeta měla plošnou rychlost <i class="mathsymb">w<sub>X</sub></i>, stále platí:
+            </p>
+            $$
+                w_X=w_a=w_p
+            $$
+            <p>Zkrátka, plošná rychlost je pro danou planetu pořád stejná</p>
+            $$
+                w = \mathrm{konstanta}
+            $$
+
+            <a href="#section3">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section5">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="whiteboard_title " id="section5">
+            <h2>K procvičení</h2>
+
+            <div class="bookmark5">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            
+            <p>1. Plošná rychlost je: </p>
+            <p><input type="radio" name="question1"> rychlost s jednotkou m/s, kterou prolétá planeta v okoli perihélia.</p>
+            <p><input type="radio" name="question1"> "obyčejné" rychlosti <i class="mathsymb">v</i> pronásobená vzdáleností planety od Slunce.</p>
+            <p><input type="radio" name="question1" id="correct1"> podíl obsahu plocha opsané průvodičem a času, který zabralo tuto plochu opsat. Má rozměr m<sup>2</sup>/s. </p>                   
+            <br>
+            <p>2.  Druhý Keplerův zákon říká, že:  </p>
+            <p><input type="radio" name="question2"> planety ve Sluneční soustavě se pohybují po elipsách málo odlišných od kružnic.</p>
+            <p><input type="radio" name="question2"> plošná rychlost je velična, která se v čase mění.</p>
+            <p><input type="radio" name="question2" id="correct2"> obsah ploch opsaných spojnicí planeta-Slunce za stejné časové intervaly jsou vždy stejná. </p>
+            <br>
+            <p>3.  Poměr rychlostí v perihéliu a aféliu je daný:  </p>
+            <p><input type="radio" name="question3"  id="correct3"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1+\epsilon}{1-\epsilon}$$</p>
+            <p><input type="radio" name="question3"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1-\epsilon}{1+\epsilon}$$</p>
+            <p><input type="radio" name="question3"> touto rovnicí: $$ \frac{v_p}{v_a} = \sqrt{\frac{1+2\epsilon}{1-2\epsilon}}$$ </p>
+            <br>
+        
+            <p><input type="submit" name="submit" value="Zkontrolvovat odpovědi" onclick="result()"></p>
+
+            <!--
+            <p id="answers"></p>
+            <p id="score"></p>
+            -->
+
+            <a href="#section4">
+                <div class="arrow-up"></div>
+            </a>
+        </div>
+        <footer>
+            <p>&#169; 2023 AstroGATE team</p>
+        </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script type="text/javascript">
+            function result() {
+                var score=0;
+                var answer1 = "špatně"
+                var answer2 = "špatně"
+                var answer3 = "špatně"
+                if (document.getElementById('correct1').checked)
+                    {
+                        score++;
+                        answer1="správně";
+                    }
+                if (document.getElementById('correct2').checked)
+                    {
+                        score++;
+                        answer2="správně";
+                    }
+                if (document.getElementById('correct3').checked)
+                    {
+                        score++;
+                        answer3="správně";
+                    }
+                               
+                if(score==3){
+                    Swal.fire({
+                    title: "Výsledek",
+                    html: "1. " + answer1 + ", 2. " + answer2 + ", 3. " + answer3 + "<br /><br />Celkové skóre: " + score +"/3",
+                    icon: 'success',
+                });
+                }
+                else{
+                    Swal.fire({
+                    title: "Výsledek",
+                    html: "1. " + answer1 + ", 2. " + answer2 + ", 3. " + answer3 + "<br /><br />Celkové skóre: " + score +"/3",
+                    icon: 'error',
+                });
+                }
+
+                //document.getElementById("answers").innerHTML = "1. " + answer1 + ", 2. " + answer2 + ", 3. " + answer3;
+                //document.getElementById("score").innerHTML = "Celkové skóre: " + score + "/3";
+            }
+        </script>
+
+        <script>
+            var acc1 = document.getElementsByClassName("bookmark1");
+              acc1[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc2 = document.getElementsByClassName("bookmark2");
+              acc2[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc3 = document.getElementsByClassName("bookmark3");
+              acc3[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc4 = document.getElementsByClassName("bookmark4");
+              acc4[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc5 = document.getElementsByClassName("bookmark5");
+              acc5[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+        </script>
+
+
+
+</body>
+</html>

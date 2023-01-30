@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="content_style.css">     
+</head>
+<body>
+    
+
+    <div class="main_content">
+        <div class="whiteboard_title" id="section1">
+            <h2>Trajektorie</h2>
+            
+            <div class="bookmark1">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            <p>Pokud víme, co jsou elipsa a kružnice zač, můžeme přistoupit ke Keplerovým zákonům.</p>
+            <p>Dříve než tak učiníme, seznámíme se s jedním užitečným pojmem. Ve fyzice se o všech bodech v prostoru, kterými prošlo těleso při svém pohybu, mluví jako o <b>trajektorii tělesa</b>. 
+                Tyto všechny body dohromady vytváří křivku, takže můžeme zároveň říct, že <b>trajektorie je křivka</b>, kterou těleso opisuje. Takovým tělesem může v našem případě být třeba planeta.
+            </p>
+            
+            <figure>
+                <img src="ASSETS/1.5.1.-animation-trajectory_anim.svg" alt="Trajektorie tělesa">
+                <figcaption>Obr.1 - Ilustrace trajektorie planety</figcaption>
+              </figure>
+            
+            <p>Keplerovy zákony říkají, po jakých trajektoriích/křivkách se planety ve sluneční soustavě pohybují, a jakým způsobem. 
+                Jednotlivé zákony si zde postupně popíšeme a vysvětlíme .
+            </p>
+            
+            <a href="#section2">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+        
+        <div class="whiteboard_title " id="section2">
+            <h2>K procvičení</h2>
+
+            <div class="bookmark5">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            
+            <p>1. Trajektorie je: </p>
+            <p><input type="radio" name="question1"> vzdálenost uražená tělesem při svém pohybu.</p>
+            <p><input type="radio" name="question1" id="correct1"> množina bodů, kterými těleso prošlo při svém pohybu.</p>
+            <br>
+
+            <p><input type="submit" name="submit" value="Zkontrolvovat odpovědi" onclick="result()"></p>
+
+            <!--
+            <p id="answers"></p>
+            <p id="score"></p>
+            -->
+
+            <a href="#section1">
+                <div class="arrow-up"></div>
+            </a>
+        </div>
+        <footer>
+            <p>&#169; 2023 AstroGATE team</p>
+        </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+        <script type="text/javascript">
+            function result() {
+                var score=0;
+                var answer1 = "špatně"
+                if (document.getElementById('correct1').checked)
+                    {
+                        score++;
+                        answer1="správně";
+                    }                
+                if(score==1){
+                    Swal.fire({
+                    title: "Výsledek",
+                    html: "1. " + answer1 + "<br /><br />Celkové skóre: " + score +"/1",
+                    icon: 'success',
+                });
+                }
+                else{
+                    Swal.fire({
+                    title: "Výsledek",
+                    html: "1. " + answer1 + "<br /><br />Celkové skóre: " + score +"/1",
+                    icon: 'error',
+                });
+                }
+
+                //document.getElementById("answers").innerHTML = "1. " + answer1 + ", 2. " + answer2 + ", 3. " + answer3;
+                //document.getElementById("score").innerHTML = "Celkové skóre: " + score + "/3";
+            }
+        </script>
+
+        <script>
+            var acc1 = document.getElementsByClassName("bookmark1");
+              acc1[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc2 = document.getElementsByClassName("bookmark2");
+              acc2[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc3 = document.getElementsByClassName("bookmark3");
+              acc3[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc4 = document.getElementsByClassName("bookmark4");
+              acc4[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc5 = document.getElementsByClassName("bookmark5");
+              acc5[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+        </script>
+
+
+
+</body>
+</html>

@@ -11,7 +11,7 @@
 
     <div class="main_content">
         <div class="whiteboard_title" id="section1">
-            <h2>Klíčová slova</h2>
+            <h2>Definice</h2>
             
             <div class="bookmark1">
                 <svg width="12" height="12">
@@ -25,11 +25,16 @@
                   </svg>
             </div>
 
-
         </div>
-        <div class="whiteboard">
-            <p class="p1"><span class="bordertext">Johannes Kepler</span> <span class="bordertext">Tycho Brahe</span> <span class="bordertext">Keplerovy zákony</span>  <span class="bordertext">hlavní poloosa</span> 
-            <span class="bordertext">vedlejší poloosa</span> <span class="bordertext">výstřednost</span> <span class="bordertext">oběžná doba</span> <span class="bordertext">gravitace</span> <span class="bordertext">kružnice</span> <span class="bordertext">elipsa</span></p>
+        <div class="whiteboard whiteparag">
+            <p>První Keplerův zákon <b>určuje trajektorie</b>, po níž se planety sluneční soustavy pohybují a zní následovně:</p>
+            
+            <p class="definice">Planety se pohybují kolem Slunce po elipsách, málo odlišných od kružnic. Elipsy planet mají společné ohnisko, v němž se nachází Slunce. Druhá ohniska elips zůstávají prázdná.</p>
+            
+            <figure>
+                <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Slunce a planety">
+                <figcaption>Obr.1 - Planety se pohybují kolem Slunce po elipsách, které jsou téměr kružnice - 1. Keplerův zákon</figcaption>
+            </figure>
 
             <a href="#section2">
                 <div class="arrow-down"></div>
@@ -37,9 +42,10 @@
         </div>
 
 
-        <div class="whiteboard_title" id="section2">
-            <h2>Doporučené vstupní znalosti</h2>
 
+        <div class="whiteboard_title" id="section2">
+            <h2>Excentricity planet</h2>
+            
             <div class="bookmark2">
                 <svg width="12" height="12">
                       <path d="M   0   0
@@ -52,35 +58,31 @@
                   </svg>
             </div>
 
+
         </div>
-        <div class="whiteboard">
-            <div class="recom_knowledge">
-                <div class="recom_knowledge_title">
-                    ASTRONOMIE
-                </div>
-                <div class="recom_knowledge_text">
-                    <p>Sluneční soustava - Slunce a 8 planet</p>
-                </div>
-            </div>
-            <div class="recom_knowledge">
-                <div class="recom_knowledge_title">
-                    FYZIKA
-                </div>
-                <div class="recom_knowledge_text">
-                    <!-- <p>Hmotný bod a jeho trajektorie</p> -->
-                    <p>Gravitace - obecný jev</p>
-                </div>
-            </div>
-            <div class="recom_knowledge2">
-                <div class="recom_knowledge_title">
-                    MATEMATIKA
-                </div>
-                <div class="recom_knowledge_text">
-                    <p>Úpravy složených výrazů</p>
-                    <p>Mocniny a odmocniny</p>
-                    <p>Vyjařování neznámé z rovnice</p>
-                </div>
-            </div>
+        <div class="whiteboard whiteparag">
+            <p> Abychom si udělali představu toho, jak moc jsou eliptické trajektorie planet podobné kružnicím, stačí se podívat na jejich <b>relativní excentricity</b>.</p> 
+            
+            <p> Největší relativní excentricitu má trajektorie planety Merkur, přibližně <h:math>ε = 0,2</h:math>. 
+                Trajektorie planet ve sluneční soustavě jsou tím pádem velmi málo protáhlé elipsy, které vypadají skoro jako kružnice.
+            </p>
+
+            <figure>
+                <img src="ASSETS/1.6.2-table.png" alt="Astronomia Nova">
+                <figcaption>Obr.2 - Tabulka excentricit</figcaption>
+            </figure>
+
+            <p>
+                Pojďme si na moment představit, že by trajektorie planet měly <b>větší</b> relativní excentricitu, takže by výsledné elipsy byly 
+                <b>protáhlejší</b>. V takovém případě by Slunce stále zůstávalo v jejich společném ohnisku. Zbylá ohniska by nadále zůstávala prázdná. 
+                Takové trajektorie by mohly vypadat třeba takto:
+            </p>
+
+            <figure>
+                <img src="ASSETS/1.6.2-ellipses.png" alt="Protáhlé elipsy">
+                <figcaption>Obr.3 - Slunce leží ve společném ohnisku elips (elipsy jsou zde protáhlejší než doopravdy ve Sluneční soustavě jsou)</figcaption>
+            </figure>
+
             <a href="#section1">
                 <div class="arrow-up"></div>
             </a>
@@ -88,11 +90,10 @@
                 <div class="arrow-down"></div>
             </a>
         </div>
-        
           
 
         <div class="whiteboard_title" id="section3">
-            <h2>Johannes Kepler</h2>
+            <h2>Perihélium a afélium</h2>
 
             <div class="bookmark3">
                 <svg width="12" height="12">
@@ -108,11 +109,18 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Hlavní postavou této kapitoly je německý astronom a matematik <b>Johannes Kepler</b> (1571-1630), který podstatným podílem přispěl k porozumění pohybu planet v naší sluneční soustavě.</p>
-            <figure>
-                <img src="ASSETS/1.2.1.-timeline.svg" alt="Johanenes Kepler na časové ose">
-                <figcaption>Obr.1 - Johanenes Kepler na časové ose</figcaption>
-            </figure>
+            <p>Bod na elipse, kdy se planeta nachází <b>nejblíže ke Slunci</b>, se nazývá <b>perihélium (přísluní)</b> a tuto vzdálenost značíme <h:math>r<sub>p</sub></h:math>.</p>
+            
+            <p>Bod na elipse, kde se planeta naopak nachází <b>nejdále od Slunce</b>, se nazývá <b>afélium (odsluní)</b> a tuto vzdálenost značíme <h:math>r<sub>a</sub></h:math>.</p>
+            
+            <p>Z vlastností elipsy potom vyplývá že</p>
+            $$
+            {r_p = a-e}
+            $$
+            $$
+            {r_a = a+e}
+            $$
+
             <a href="#section2">
                 <div class="arrow-up"></div>
             </a>
@@ -121,8 +129,13 @@
             </a>
         </div>
 
-        <div class="whiteboard_title " id="section4">
-            <h2>Heliocentrická a Geocentrická představa</h2>
+
+
+
+
+
+        <div class="whiteboard_title" id="section4">
+            <h2>Oběžná rovina</h2>
 
             <div class="bookmark4">
                 <svg width="12" height="12">
@@ -138,19 +151,13 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Ještě ani v 17. století nebyli všichni astronomové přesvědčeni o tom, že se planety pohybují kolem Slunce. Panovali dvě představy o „uspořádání světa“ – představa <b>Heliocentrická</b> a <b>Geocentrická</b>.</p>
-            <p>Podle Heliocentrické představy je <b>Slunce středem vesmíru</b>, kolem kterého všechno ostatní obíhá, včetně Země.</p>
-            <figure>
-                <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
-                <figcaption>Obr.2 - Zjednodušená ilustrace heliocentrického systému</figcaption>
-            </figure>
-            <p>Názorovým protikladem byla Geocentrická představa, podle níž <b>je Země středem vesmíru</b> a bodem, kolem něhož všechno ostatní obíhá.</p>
-            <figure>
-                <img src="ASSETS/1.2.2.-model-geocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
-                <figcaption>Obr.3 - Zjednodušená ilustrace geocentrického systému</figcaption>
-            </figure>
-            <p>Kepler byl zastáncem Heliocentrické představy. Díky této představě, údajům z pozorování planet na noční obloze a mnohaletém bádání, nakonec přišel na tři pravidla (zákonitosti), které všechny planety při svém obíhání splňují. Tyto zákonitosti jsou známy jako <b>tři Keplerovy zákony</b>, kterým se tady budeme věnovat.</p>
+            <p>První Keplerův zákon zároveň říká, že pohyb planety je rovinný, protože opisuje elipsu. Elipsa je totiž křivka, která vždy leží v nějaké rovině. </p>
             
+            <p>Rovinu, na níž planeta obíhá Slunce, nazýváme <b>oběžná rovina</b>.</p>
+            
+            <p>Oběžné roviny jsou pro různé planety odlišné. Například Mars má jinou oběžnou rovinu než Země. Avšak oběžné roviny jednotlivých planet jsou vůči sobě minimálně nakloněné a pootočené. Všechny tyto oběžné roviny však mají Slunce jako svůj společný bod.</p>
+
+
             <a href="#section3">
                 <div class="arrow-up"></div>
             </a>
@@ -160,8 +167,13 @@
         </div>
 
 
-        <div class="whiteboard_title " id="section5">
-            <h2>K procvičení</h2>
+
+
+
+
+
+        <div class="whiteboard_title" id="section5">
+            <h2>Rovina Ekliptiky</h2>
 
             <div class="bookmark5">
                 <svg width="12" height="12">
@@ -177,21 +189,65 @@
 
         </div>
         <div class="whiteboard whiteparag">
+            <p>Oběžnou rovinu Země nazýváme <b>rovina Ekliptiky</b>. </p>
             
-            <p>1. Podle Heliocentrické představy: </p>
-            <p><input type="radio" name="question1"> byl svět stvořen antickým bohem Heliosem.</p>
-            <p><input type="radio" name="question1"> má nejširší zastoupení prvků ve vesmíru helium.</p>
-            <p><input type="radio" name="question1" id="correct1"> není středem vesmíru Země, ale Slunce, kolem kterého ostatní tělesa obíhají.</p>                   
+            <p>Zemský rovník svírá s touto rovinou úhel rovný přibližně 23,5°.</p>
+            
+            <p>Naklonění Zemské osy vůči kolmici na rovinu ekliptiky má za následek 
+                <b>střídání ročních období</b> – v létě je severní polokoule Země osvětlena více než je v zimě, a tak na ni dopadá více energie, která polokouli zahřívá.</p>
+
+            <a href="#section4">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section6">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+        
+        <div class="whiteboard_title " id="section6">
+            <h2>K procvičení</h2>
+
+            <div class="bookmark6">
+                <svg width="12" height="12">
+                      <path d="M   0   0
+                               L 12   0
+                               L 12 12
+                               L  6  8
+                               L   0 12
+                               Z"
+                            fill="#007BFF"/>
+                  </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            
+            <p>1. Podle prvního Keplerova zákona se planety pohybují po </p>
+            <p><input type="radio" name="question1" id="correct1"> elipsách.</p>
+            <p><input type="radio" name="question1"> hyperbolách.</p>
+            <p><input type="radio" name="question1"> parabolách</p>                   
             <br>
-            <p>2. Geocentrická představa: </p>
-            <p><input type="radio" name="question2"> je současná představa o uspořádání vesmíru.</p>
-            <p><input type="radio" name="question2" id="correct2"> je názorovým protipříkladem Heliocentrického modelu, kdy v centru vesmíru je Slunce.</p>
-            <p><input type="radio" name="question2"> vznikla jako vylepšení Heliocentrického modelu.</p>
+            <p>2. Trajektorie planet ve sluneční soustavě</p>
+            <p><input type="radio" name="question2"> leží všechny ve stejné rovině oběhu.</p>
+            <p><input type="radio" name="question2" id="correct2"> jsou téměr kruhové, tzn. mají malou relativní excentricitu. </p>
+            <p><input type="radio" name="question2"> jsou elipsy, které sdílí obě ohniska.</p>
             <br>
-            <p>3. Současná představa o uspořádání světa: </p>
-            <p><input type="radio" name="question3"> je ta geocentrická.</p>
-            <p><input type="radio" name="question3"> je ta heliocentrická.</p>
-            <p><input type="radio" name="question3" id="correct3"> není ani geocentrická, ani heliocentrická.</p>
+            <p>3. Elipsy planet: </p>
+            <p><input type="radio" name="question3"> mají všechna ohniska různá.</p>
+            <p><input type="radio" name="question3" id="correct3"> sdílí jedno ohnisko, v němž je Slunce.</p>
+            <p><input type="radio" name="question3"> sdílí jedno ohnisko, v němž není Slunce.</p>
+
 
             <p><input type="submit" name="submit" value="Zkontrolvovat odpovědi" onclick="result()"></p>
 
@@ -200,13 +256,15 @@
             <p id="score"></p>
             -->
 
-            <a href="#section4">
+            <a href="#section5">
                 <div class="arrow-up"></div>
             </a>
         </div>
         <footer>
             <p>&#169; 2023 AstroGATE team</p>
         </footer>
+
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=default'></script>
 
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -235,7 +293,7 @@
                 if(score==3){
                     Swal.fire({
                     title: "Výsledek",
-                    html: "1. " + answer1 + ", 2. " + answer2 + ", 3. " + answer3 +"<br /><br />Celkové skóre: " + score +"/3",
+                    html: "1. " + answer1 + ", 2. " + answer2 + ", 3. " + answer3 + "<br /><br />Celkové skóre: " + score +"/3",
                     icon: 'success',
                 });
                 }
@@ -271,6 +329,10 @@
               });
               var acc5 = document.getElementsByClassName("bookmark5");
               acc5[0].addEventListener("click", function() {
+                this.classList.toggle("active");
+              });
+              var acc6 = document.getElementsByClassName("bookmark6");
+              acc6[0].addEventListener("click", function() {
                 this.classList.toggle("active");
               });
         </script>
