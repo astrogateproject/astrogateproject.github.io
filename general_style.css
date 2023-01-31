@@ -49,6 +49,11 @@ body{
     color: white;
 }
 
+.astrogate_label{
+    color: white;
+    margin-left: 12px;
+}
+
 .title{
     border-bottom: 5px solid rgb(48, 179, 255);
     width: auto;
