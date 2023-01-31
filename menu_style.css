@@ -20,11 +20,21 @@
 }
 
 .main_menu, .main_menu h2 {
-    font-size: 14px;
+    font-size: 15px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    color: rgb(36, 93, 163);
 }
 
 .main_menu li{
     margin: 6px 0;
+}
+
+.obsah{
+  font-size: 18px;
+  margin-bottom: 15px;
+  color: rgb(36, 93, 163);
+  margin-top: -9px;
 }
 
 .main_menu a {

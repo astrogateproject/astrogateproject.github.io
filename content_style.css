@@ -139,6 +139,8 @@ html {
     border-right: 10px solid transparent; 
     border-bottom: 10px solid rgb(143, 143, 143);
     display: inline-block;
+
+    border: 0px;
 }
 
 .arrow-up:hover{
@@ -154,6 +156,9 @@ html {
     border-top: 10px solid rgb(143, 143, 143);
     display: inline-block;
     margin-right: 10px;
+
+    border: 0px;
+
 }
 
 .arrow-down:hover{
