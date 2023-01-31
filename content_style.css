@@ -201,10 +201,26 @@ footer{
     color: black;
     padding-bottom: 5%;
     padding-right: 30%;
-    margin-top: -5%;
+    margin-top: -1%;
     font-weight: bold;
 }
 
+.logo_content{
+    float: left;
+    margin-top: -6%;
+    margin-left: auto;
+    margin-bottom: 10%;
+}
+
+/*
+.logo_content a{
+    padding-right: 5vh;
+}
+*/
+
+.logo_content img{
+    height: 90px;
+}
 
 
 .math_symb{
