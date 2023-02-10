@@ -201,26 +201,38 @@ figure{
 
 footer{
     float: right;
-    height: 5%;
+    /*height: 5%;*/
     width: auto;
     color: black;
     padding-bottom: 5%;
-    padding-right: 30%;
-    margin-top: -3.6%;
+    /*padding-right: 30%;*/
+    /*margin-top: -3.6%;*/
+    margin-top: 3%;
+    /*margin-left: 0px;*/
 }
 
 footer p{
     margin-bottom: 10px;
     margin-right: 15px;
+    font-size: 15px;
 }
 
 .logo_content{
     float: left;
+    /*
     margin-top: -5%;
     margin-left: 15px;
     margin-bottom: 0%;
+    border-bottom: 5vh solid white;
     background: linear-gradient(0.25turn, transparent,white,white,white,transparent);
-    border-bottom: 5vh solid white
+    */
+}
+
+.logo_background{
+    height: 150px;
+    background: white;
+    border-radius: 5px;
+    margin-right: 30%;
 }
 
 /*
@@ -230,7 +242,7 @@ footer p{
 */
 
 .logo_content img{
-    height: 80px;
+    height: 60px;
     margin: 15px;
 }
 
