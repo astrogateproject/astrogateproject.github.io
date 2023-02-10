@@ -218,7 +218,9 @@ footer p{
     float: left;
     margin-top: -5%;
     margin-left: 15px;
-    margin-bottom: 10%;
+    margin-bottom: 0%;
+    background: linear-gradient(0.25turn, transparent,white,white,white,transparent);
+    border-bottom: 5vh solid white
 }
 
 /*
