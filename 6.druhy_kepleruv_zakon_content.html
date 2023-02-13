@@ -372,22 +372,22 @@
         <div class="whiteboard whiteparag">
             
             <p>1. Plošná rychlost je: </p>
-            <p><input type="radio" name="question1"> rychlost s jednotkou m/s, kterou prolétá planeta v okoli perihélia.</p>
-            <p><input type="radio" name="question1"> "obyčejné" rychlosti <i class="mathsymb">v</i> pronásobená vzdáleností planety od Slunce.</p>
-            <p><input type="radio" name="question1" id="correct1"> podíl obsahu plocha opsané průvodičem a času, který zabralo tuto plochu opsat. Má rozměr m<sup>2</sup>/s. </p>                   
+            <p><input type="radio" name="question1" id="q11"> <label for="q11"> rychlost s jednotkou m/s, kterou prolétá planeta v okoli perihélia. </label></p>
+            <p><input type="radio" name="question1" id="q12"> <label for="q12"> "obyčejné" rychlosti <i class="mathsymb">v</i> pronásobená vzdáleností planety od Slunce. </label></p>
+            <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> podíl obsahu plochy opsané průvodičem a času, který zabralo tuto plochu opsat. Má rozměr m<sup>2</sup>/s. </label></p>                   
             <br>
             <p>2.  Druhý Keplerův zákon říká, že:  </p>
-            <p><input type="radio" name="question2"> planety ve Sluneční soustavě se pohybují po elipsách málo odlišných od kružnic.</p>
-            <p><input type="radio" name="question2"> plošná rychlost je velična, která se v čase mění.</p>
-            <p><input type="radio" name="question2" id="correct2"> obsah ploch opsaných spojnicí planeta-Slunce za stejné časové intervaly jsou vždy stejná. </p>
+            <p><input type="radio" name="question2" id="q21"> <label for="q21"> planety ve Sluneční soustavě se pohybují po elipsách málo odlišných od kružnic. </label></p>
+            <p><input type="radio" name="question2" id="q22"> <label for="q22"> plošná rychlost je velična, která se v čase mění. </label></p>
+            <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> obsahy ploch opsaných spojnicí planeta-Slunce za stejné časové intervaly jsou stejné. </label></p>
             <br>
             <p>3.  Poměr rychlostí v perihéliu a aféliu je daný:  </p>
-            <p><input type="radio" name="question3"  id="correct3"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1+\epsilon}{1-\epsilon}$$</p>
-            <p><input type="radio" name="question3"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1-\epsilon}{1+\epsilon}$$</p>
-            <p><input type="radio" name="question3"> touto rovnicí: $$ \frac{v_p}{v_a} = \sqrt{\frac{1+2\epsilon}{1-2\epsilon}}$$ </p>
+            <p><input type="radio" name="question3" id="correct3"> <label for="correct3"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1+\epsilon}{1-\epsilon}$$ </label></p>
+            <p><input type="radio" name="question3" id="q32"> <label for="q32"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1-\epsilon}{1+\epsilon}$$ </label></p>
+            <p><input type="radio" name="question3" id="q33"> <label for="q33"> touto rovnicí: $$ \frac{v_p}{v_a} = \sqrt{\frac{1+2\epsilon}{1-2\epsilon}}$$ </label> </p>
             <br>
         
-            <p><input type="submit" name="submit" value="Zkontrolvovat odpovědi" onclick="result()"></p>
+            <p><input type="submit" name="submit" value="Zkontrolovat odpovědi" onclick="result()"></p>
 
             <!--
             <p id="answers"></p>
@@ -401,11 +401,12 @@
         <div class="logo_background">
             <figure class="logo_content">
                 <a href="https://olympiada.astro.cz/" target="_blank"><img src="ASSETS/astroolympiada_logo.png" alt="logo AO"> </a>
-                <a href="https://uka.cuni.cz/UKA-1.html" target="_blank"><img src="ASSETS/UK_logo.png" alt="logo UKa"></a>
+                <a href="https://cuni.cz/UK-1.html" target="_blank"><img src="ASSETS/UK_logo.png" alt="logo UKa"></a>
                 <a href="https://uka.cuni.cz/UKA-1.html" target="_blank"><img src="ASSETS/UKA_logo.png" alt="logo UKa"></a>
             </figure>
             <footer>
                 <p>Podpořeno grantem UKa!</p>
+                <p>astrogateproject@gmail.com</p>
                 <p>&#169; 2023 AstroGATE team</p>
             </footer>
         </div>

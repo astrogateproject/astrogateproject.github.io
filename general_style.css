@@ -69,28 +69,49 @@ body{
     margin-right: -5%;
 }
 
+.anim_horizontal{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveleft 1.0s linear forwards;
+}
+
+.anim_vertical{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveleft 1.0s linear forwards;
+}
+
+
+
+
 .title1_project{
     text-align: center;
     color: rgb(36, 93, 163);
     font-size: 42px;
+    animation-delay: 0.5s;
 }
+
 
 .title2_project{
     text-align: center;
     color: rgb(135, 135, 244);
     font-size: 15px;
+    animation-delay: 0.5s;
 }
 
 .title3_project{
     text-align: center;
     color: rgb(36, 93, 163);
     font-size: 15px;
+    animation-delay: 1.5s;
 }
+
 
 .container_button{
     display: flex;
     justify-content: center;
     align-items: center;
+    animation-delay: 1.5s;
 }
 
 .container_button button{
@@ -123,7 +144,7 @@ body{
 
 
 span{
-    background: rgb(83, 83, 207);
+    background: rgba(83, 83, 207,0.5);
     height: 100%;
     width: 0;
     border-radius: 20px;
@@ -136,6 +157,10 @@ span{
 
 a:link, a:visited, a:hover, a:active{
     text-decoration: none;
+}
+
+a.container_button_a{
+    color:rgb(36, 93, 163);
 }
 
 .title_page_container1{
@@ -162,7 +187,20 @@ footer{
    text-align: center;
 }
 
+.background-color{
+    background: white; 
+    margin-left: 20%; 
+    margin-right: 20%; 
+    min-width: 500px;
+    padding: 0%; 
+    margin-top: 10px; 
+    margin-bottom: 60px; 
+    border-radius: 5px;
+    animation-delay: 2.5s;
+}
 
+@keyframes moveleft { 100%{opacity: 1;
+    transform: translatex(0px)}};
 
 /*
 
