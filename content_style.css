@@ -233,6 +233,7 @@ footer p{
     background: white;
     border-radius: 5px;
     margin-right: 30%;
+    max-width: 900px;
 }
 
 /*

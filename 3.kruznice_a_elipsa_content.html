@@ -169,7 +169,7 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Libovolný bod na elipse si můžeme označit jako <b>P</b>. Vzdálenost bodu <b>P</b> od ohniska <b>E</b> označíme  jako <b>|PE|</b> a od ohniska <b>F</b> jako <b>|PF|</b>.</p>
+            <p>Libovolný bod na elipse si můžeme označit jako <b>P</b>. Vzdálenost bodu <b>P</b> od ohniska <b>E</b> označíme  jako <b>|EP|</b> a od ohniska <b>F</b> jako <b>|FP|</b>.</p>
             
             <figure>
                 <img src="ASSETS/1.4.4.-model-ellipse_model_distances.svg" alt="Ilustrace elipsy">
@@ -178,7 +178,7 @@
 
             <p>Pokud si na elipse zvolíme další libovolný bod, který v tomto případě označíme jako <b>Q</b>, tak bude platit že</p>
 
-            $$ { |QE| + |QF| = |PE| + |PF|   } $$
+            $$ { |EQ| + |FQ| = |EP| + |FP|   } $$
 
             <figure>
                 <img src="ASSETS/1.4.4.-model-ellipse_model_2p_distant.svg" alt="Ilustrace elipsy, stejný součet vzdáleností">
@@ -249,7 +249,7 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Vzdálenost od středu elipsy k jednomu z ohnisek (tedy <b>|SE|</b> nebo <b>|SF|</b>) se nazývá <b>výstřednost</b> (excentricita) a budeme ji značit <i class="mathsymb">e</i>. Někdy se také nazývá <b>délková výstřednost</b>, protože má rozměr délky.</p>
+            <p>Vzdálenost od středu elipsy k jednomu z ohnisek (tedy <b>|ES|</b> nebo <b>|FS|</b>) se nazývá <b>výstřednost</b> (excentricita) a budeme ji značit <i class="mathsymb">e</i>. Někdy se také nazývá <b>délková výstřednost</b>, protože má rozměr délky.</p>
             
             <p>Pokud ponecháme stejnou velikost hlavní poloosy <i class="mathsymb">a</i>, zatímco budeme zvětšovat výstřednost <i class="mathsymb">e</i> (nejvýše však do velikosti <i class="mathsymb">a</i>), bude elipsa čím dál tím více <b>protáhlejší</b>.</p>
 
@@ -288,7 +288,7 @@
             <p>Z definice elipsy vyplývá, že každý bod na elipse má od obou ohnisek <b>stejný součet vzdáleností</b>. Teď si ukážeme, jak tento součet souvisí s jinými parametry elipsy. </p>
             
             <p>Pro nejvzdálenější bod <b>A</b> od středu elipsy <b>S</b> platí následující vztah</p>
-            $${ |AE|+|AF| = (a+e)+(a-e) = 2a }$$
+            $${ |EA|+|FA| = (a+e)+(a-e) = 2a }$$
 
             <figure>
                 <img src="ASSETS/1.4.7.-model-eq_ellipse_parameters.svg" alt="souvislost definice elipsy a jejích jednotllivých parametrů">
@@ -296,7 +296,7 @@
             </figure>
 
             <p>Z toho plyne, že pro libovolný bod <b>P</b> na elipse platí</p>
-            $${|PE|+|PF|=2a}$$
+            $${|EP|+|FP|=2a}$$
 
             <figure>
                 <img src="ASSETS/1.4.7.-model-ellipse_model_distant2a.svg" alt="hlavní poloosa, střed elipsy">
@@ -339,10 +339,10 @@
                 <li>Zvolíte si, jakou hlavní poloosu <i class="mathsymb">a</i> má vámi zkonstruovaná elipsa mít.</li>
                 <li>
                     Bod na elipse zkonstruujete tak, že si zvolíte vzdálenost <i class="mathsymb">r</i> bodu od ohniska, přitom <i class="mathsymb">r</i> splňuje
-                    $${r_{min} = a-e \le r \le a+e = r_{max}}$$
+                    $$0 < {r_{min} = a-e \le r \le a+e = r_{max}}$$
                     Z ohniska <b>F</b> pak nakreslíme kružnici o zvoleném poloměru <b>r</b>.
                 </li>
-                <li>Z opačného ohniska nakreslíme kružnici o poloměr <i class="mathsymb">2a-r</i>.</li>
+                <li>Z ohniska <b>E</b> nakreslíme kružnici o poloměr <i class="mathsymb">2a-r</i>.</li>
                 <li>Kružnice se protnuly ve dvou bodech <b>P1</b> a <b>P2</b>, oba patří do elipsy.</li>
                 <li>Postup opakujeme od bodu 3. pro další hodnoty <i class="mathsymb">r</i>.</li>
             </ol>
@@ -415,7 +415,7 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Když ohniska <b>E</b> a <b>F</b> splynou do jednoho bodu ve středu elipsy <b>S</b>, je <b>ýstřednost elipsy nulová</b></p>
+            <p>Když ohniska <b>E</b> a <b>F</b> splynou do jednoho bodu ve středu elipsy <b>S</b>, je <b>výstřednost elipsy nulová</b></p>
             $${e=0}$$
             <p>Tím dostáváme kružnici. V takovém případě se <b>hlavní poloosa <i class="mathsymb">a</i> rovná poloměru <i class="mathsymb">r</i> vzniklé kružnice</b>, tedy</p>
             $${a=r}$$
@@ -500,7 +500,7 @@
             <p>Kromě délkové výstřednosti <i class="mathsymb">e</i> se u elipsy ještě zavádí <b>relativní výstřednost <i class="mathsymb">ε</i> (epsilon)</b>. Relativní výstřednost odpovídá <b>poměru mezi délkovou výstředností a hlavní poloosou</b>.</p>
             $${\epsilon = \frac{e}{a}}$$
 
-            <p>Relativní výstřednost <i class="mathsymb">ε</i> určuje, jak moc je elipsa protáhlá a nabývá hodnot z intervalu <b>(0,1)</b>. V krajním případě, kdy <i class="mathsymb">ε</i> = 0, se jedná o kružnici. V opačném případě, kdy <i class="mathsymb">ε</i> = 1, je elipsa stlačená do podoby úsečky spojující body <b>E</b> a <b>F</b>.</p>
+            <p>Relativní výstřednost <i class="mathsymb">ε</i> určuje, jak moc je elipsa protáhlá a nabývá hodnot mezi 0 a 1. V krajním případě, kdy <i class="mathsymb">ε</i> = 0, se jedná o kružnici. V opačném případě, kdy se <i class="mathsymb">ε</i> blíží čím dál více k 1, stává se elipsa čím dál více stlačená (ve vertikálním směru, podle obrázku níže) až začne připomínat úsečku, jejíž krajní body jsou <b>E</b> a <b>F</b>.</p>
 
             <figure>
                 <img src="ASSETS/1.4.12.-model-ellipse_model_relexcent.svg" alt="Vedlejší poloosa">
@@ -545,10 +545,10 @@
             </figure>
 
             <p>V případě, že se jedná o kružnici, kdy <i class="mathsymb">e</i> = 0, pak <i class="mathsymb">b = a = r</i>. Obsah kružnice je</p>
-
+            $${S=πr^2}$$
             <figure>
                 <img src="ASSETS/1.4.13.-animation-circle_anim_area.svg" alt="Obsah kružnice">
-                <figcaption>Obr. 20 - Obsah kružnice</figcaption>
+                <figcaption>Obr. 21 - Obsah kružnice</figcaption>
             </figure>
 
             <a href="#section12">
@@ -583,7 +583,7 @@
             <p>1. Elipsa je: </p>
             <p><input type="radio" name="question1" id="q11"> <label for="q11"> množina těch bodů roviny, které jsou stejně vzdáleny od dané přímky (tzv. řídicí přímka nebo také direktrix) jako od daného bodu, který na ní neleží (tzv. ohnisko neboli fokus). </label></p>
             <p><input type="radio" name="question1" id="q12"> <label for="q12"> množina všech bodů v rovině o daném rozdílu vzdáleností od dvou pevných ohnisek. </label></p>
-            <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> množina všech bodů v rovině, které mají stálý součet vzdáleností  2<i class="mathsymb">a</i> od dvou pevně daných bodů, tzv. ohnisek. </label></p>                   
+            <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> množina všech bodů v rovině, které mají stálý součet vzdáleností  2<i class="mathsymb">a</i> od dvou zadaných bodů, tzv. ohnisek. </label></p>                   
             <br>
             <p>2. Kružnice je: </p>
             <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> množina všech bodů v rovině, které mají fixní vzdálenost od určitého bodu, kterému říkáme střed kružnice. </label></p>
