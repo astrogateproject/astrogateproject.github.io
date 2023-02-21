@@ -27,17 +27,19 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Pokud víme, co jsou elipsa a kružnice zač, můžeme pomalu přistoupit ke Keplerovým zákonům.</p>
-            <p>Dříve než tak učiníme, seznámíme se s jedním užitečným pojmem. Ve fyzice se o všech bodech v prostoru, kterými prošlo těleso při svém pohybu, mluví jako o <b>trajektorii tělesa</b>. 
-                Tyto všechny body dohromady vytváří křivku, proto můžeme říci, že <b>trajektorie je křivka</b>, kterou těleso opisuje. Takovým tělesem může v našem případě být planeta.
+            <p> Když už jsme se detailně seznámili s pojmy <i>kružnice</i> a <i>elipsa</i>, mohli bychom se směle a už konečně vrhnout na samotná znění Keplerových zákonů.</p>
+            <p> I tak, předtím než tak učiníme, seznámíme se ještě s jedním pojmem. Tím pojmem je <b>trajektorie</b>, pojem hojně známý z fyziky.</p>
+            <p> Pod <i>trajektorií</i> se myslí <b>všechny pozice v prostoru, kterými (ideálně velmi malé) těleso prošlo při svém pohybu</b>. Pokud je těleso rozsáhlé (nebodové), každý jeho bod opisuje vlastní trajektorii.</p>
+            <p> Ač jsou planety neskutečně rozsáhlá tělesa (alespoň v porovnání s naší každodenní zkušeností), k popisu jejich pohybu ve sluneční soustavě si bohatě vystačíme s popisem planety jako bodu (tzn. budeme planetu považovat za velmi malé těleso, prakticky bod). S každou planetou je tak spojená jediná trajektorie.</p>
+            <p> Pokud bychom chtěli mluvit spíše v geometrických než fyzikálních termínech, nejspíš bychom nemluvili o <i>trajektorii</i> ale o <i>křivce</i>.  Z toho, co jsme si řekli dříve ke křivce jako pojmu, by nám mělo být jasné, že tento pojem s trajektorií úzce souvisí. Takřka bychom mohli říci, že je to v podstatě „to samé“, jen se každý pojem používá v jiných souvislostech. Mluvíme-li o pohybu, upřednostníme <i>trajektorii</i>. Pokud by nás ale pohyb nezajímal a spíše se na věc dívali jako matematici, mluvili bychom raději o <i>křivce</i>.
             </p>
             
             <figure>
                 <img src="ASSETS/1.5.1.-animation-trajectory_anim.svg" alt="Trajektorie tělesa">
-                <figcaption>Obr.1 - Ilustrace trajektorie planety</figcaption>
+                <figcaption>Obr.1 – Ilustrace trajektorie planety</figcaption>
               </figure>
             
-            <p><b>Keplerovy zákony říkají, po jakých trajektoriích/křivkách se planety ve sluneční soustavě pohybují, a jakým způsobem</b>. 
+            <p><b>Keplerovy zákony říkají, po jakých trajektoriích (křivkách) se planety ve sluneční soustavě pohybují, a jakým způsobem</b>. 
                 Jednotlivé zákony si postupně popíšeme a vysvětlíme .
             </p>
             
@@ -64,9 +66,16 @@
         </div>
         <div class="whiteboard whiteparag">
             
-            <p>1. Trajektorie je: </p>
+            <p>1. Trajektorie je </p>
             <p><input type="radio" name="question1" id="q11"> <label for="q11"> vzdálenost uražená tělesem při svém pohybu.</label></p>
             <p><input type="radio" name="question1" id="correct1">  <label for="correct1"> množina bodů, kterými těleso prošlo při svém pohybu.</label></p>
+            <p><input type="radio" name="question1" id="q13">  <label for="q13"> zdrobnělina pro malý trajekt.</label></p>
+            <br>
+
+            <p>2. Keplerovy zákony </p>
+            <p><input type="radio" name="question2" id="q21">  <label for="q21"> jsou čtyři zákony a řídí se jimi pohyb planet ve sluneční soustavě.</label></p>
+            <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> jsou tři zákony a řídí se jimi pohyb planet ve sluneční soustavě.</label></p>
+            <p><input type="radio" name="question2" id="q23">  <label for="q23"> byly všechny objeveny v Praze.</label></p>
             <br>
 
             <p><input type="submit" name="submit" value="Zkontrolovat odpovědi" onclick="result()"></p>
@@ -87,9 +96,9 @@
                 <a href="https://uka.cuni.cz/UKA-1.html" target="_blank"><img src="ASSETS/UKA_logo.png" alt="logo UKa"></a>
             </figure>
             <footer>
-                <p>Podpořeno grantem UKa!</p>
-                <p>astrogateproject@gmail.com</p>
-                <p>&#169; 2023 AstroGATE team</p>
+                Podpořeno grantem UKa! |
+                astrogateproject@gmail.com |
+                &#169; 2023 AstroGate team
             </footer>
         </div>
 
@@ -99,22 +108,28 @@
             function result() {
                 var score=0;
                 var answer1 = "špatně"
+                var answer2 = "špatně"
                 if (document.getElementById('correct1').checked)
                     {
                         score++;
                         answer1="správně";
-                    }                
-                if(score==1){
+                    }           
+                if (document.getElementById('correct2').checked)
+                    {
+                        score++;
+                        answer2="správně";
+                    }     
+                if(score==2){
                     Swal.fire({
                     title: "Výsledek",
-                    html: "1. " + answer1 + "<br /><br />Celkové skóre: " + score +"/1",
+                    html: "1. " + answer1 + ", 2. " + answer2 + "<br /><br />Celkové skóre: " + score +"/2",
                     icon: 'success',
                 });
                 }
                 else{
                     Swal.fire({
                     title: "Výsledek",
-                    html: "1. " + answer1 + "<br /><br />Celkové skóre: " + score +"/1",
+                    html: "1. " + answer1 + ", 2. " + answer2 + "<br /><br />Celkové skóre: " + score +"/2",
                     icon: 'error',
                 });
                 }
