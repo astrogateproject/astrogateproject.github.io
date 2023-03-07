@@ -27,13 +27,13 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Druhému Keplerovu zákonu se také přezdívá <b>zákon ploch</b> a zní následovně:</p>
-            <p class="definice">Spojnice středu planety a Slunce opíše za stejné časy plochy o stejném obsahu.</p>
-            <p>Spojnice středů Slunce a planety se nazývá <b>průvodič</b>. Pokud bychom sledovali pohyb planety <b>po dobu <i class="mathsymb">t</i></b>, opíše průvodič plochu o <b>obsahu <i class="mathsymb">S</i></b>. </p>
+            <p>Druhému Keplerovu zákonu se přezdívá <b>zákon ploch</b> a zní následovně:</p>
+            <p class="definice">Spojnice planety a Slunce opíše za stejné časy plochy o stejném obsahu.</p>
+            <p>Spojnice Slunce a planety se nazývá <b>průvodič</b>. Pokud bychom sledovali pohyb planety <b>po dobu <i class="mathsymb">t</i></b>, opíše průvodič plochu o <b>obsahu <i class="mathsymb">S</i></b>. </p>
             
             <figure>
                 <img src="ASSETS/1.7.1.-model-area_position_model_free.svg" alt="Průvodič opisuje plochu" style="width:85%">
-                <figcaption>Obr. 1 - Průvodič planety opsal za čas <i class="mathsymb">t</i> plochu <i class="mathsymb">S</i></figcaption>
+                <figcaption>Obr. 1 –⁠ Průvodič planety opsal za čas <i class="mathsymb">t</i> plochu <i class="mathsymb">S</i></figcaption>
             </figure>
     
             
@@ -41,7 +41,7 @@
             
             <figure>
                 <img src="ASSETS/1.7.1.-model-area_position_model_fixed.svg" alt="2. Keplerův zákon" style="width:85%">
-                <figcaption>Obr. 2 - Druhý Keplerův zákon</figcaption>
+                <figcaption>Obr. 2 –⁠ Ilustrace druhého Keplerova zákona</figcaption>
             </figure>
 
 
@@ -53,7 +53,7 @@
 
 
         <div class="whiteboard_title" id="section2">
-            <h2>Rychlosti v perihéliu a aféliu</h2>
+            <h2>Rychlost v perihéliu a aféliu</h2>
             
             <div class="bookmark2">
                 <svg width="12" height="12">
@@ -70,11 +70,13 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Druhý Keplerův zákon má také zajímavé důsledky pro <b>rychlosti planet</b>. Pokud se planeta pohybuje po elipse, bude mít v <b>různých místech</b> na své trajektorii obecně <b>různou rychlost</b>. 
-                Obecně platí, že <b>v perihéliu</b> (nejblíže Slunci) je rychlost planety <b>větší než v aféliu</b> (nejdále od Slunce).</p>
+            <p>Druhý Keplerův zákon má také zajímavý důsledek pro <b>rychlosti planet</b>. Pokud se planeta pohybuje po elipse, bude mít v <b>různých bodech</b> elipsy <b>různou rychlost</b>. 
+                Platí, že <b>v perihéliu</b> (nejblíže Slunci) má rychlost <b>největší</b> a <b>v aféliu</b> (nejdále od Slunce) zase <b>nejmenší</b>. Pokud rychlost v perihéliu budeme značit <i class="mathsymb">v<sub>p</sub></i> a v aféliu <i class="mathsymb">v<sub>a</sub></i>, přitom rychlost kdekoliv na elipse bude <i class="mathsymb">v</i>, platí</p>
+                $$ v_a \le v \le v_p $$            
+            <p>Speciálním případem je potom <b>kružnice</b>, po níž se planeta pohybuje všude se <b>stejnou rychlostí</b>.</p>
             
-            <p>Speciálním případem je potom kružnice, po níž se planeta pohybuje všude se stejnou rychlostí.</p>
-            
+            <p>Spočítáme si, kolikrát je rychlost v perihéliu větší než rychlost v aféliu.</p>
+
             <a href="#section1">
                 <div class="arrow-up"></div>
             </a>
@@ -88,7 +90,7 @@
           
 
         <div class="whiteboard_title" id="section3">
-            <h2>Výpočet rychlostí v perihéliu a aféliu</h2>
+            <h2>Poměr rychlostí v perihéliu a aféliu</h2>
 
             <div class="bookmark3">
                 <svg width="12" height="12">
@@ -104,48 +106,47 @@
 
         </div>
         <div class="whiteboard whiteparag">
-            <p>Poměr rychlostí při průletu perihéliem a aféliem se dá určit s pomocí druhého Keplerova zákona.</p>
+            <p>
+                S pomocí druhého Keplerova zákona si můžeme relativně jednoduše spočítat, kolikrát je rychlost v perihéliu větší než rychlost v aféliu.
+            </p>
+
             
-            <p>Představme si, že planeta zrovna prolétá nejblíže ke Slunci, tedy v okolí perihélia <h:math>P</h:math>, 
-                a za krátký čas <i class="mathsymb">t</i> opíše průvodič malou plochu <i class="mathsymb">S</i>. Čím kratší je doba <i class="mathsymb">t</i>, 
-                tím více se bude plocha s obsahem <i class="mathsymb">S</i> podobat trojúhelníku o obsahu <i class="mathsymb">S<sub>p</sub></i>.</p>
+            <p>Představme si, že planeta zrovna prolétá bodem nejblíže ke Slunci, tedy perihéliem, a od toho momentu opíše průvodič za krátký čas <i class="mathsymb">t</i> malou plochu. Tato plocha představuje malou část plochy elipsy a má obsah <i class="mathsymb">S</i>. Čím kratší je doba <i class="mathsymb">t</i>, 
+                tím více se bude opsaná plocha podobat <i>pravoúhlému trojúhelníku</i>, jehož vrcholy leží ve Slunci, perihéliu a bodu <b>B</b> podle obrázku (ten na elipse neleží). Pravý úhel má trojúhelník v perihéliu. Doplňme, ze obsah tohoto trojúhelníka budeme značit <i class="mathsymb">S<sub>p</sub></i></p>
 
             <figure>
                 <img src="ASSETS/1.7.3-illustration-ellipse_triangle.svg" alt="trojúhelník a výřez elipsy" style="width:85%">
-                <figcaption>Obr. 3 - K podobnosti trojúhelníku a výsledku elipsy</figcaption>
+                <figcaption>Obr. 3 –⁠ Trojúhelník s vrcholy ve Slunci, perihéliu (pravý úhel) a bodu <b>B</b> se podobá ploše opsané průvodičem za čas <i class="mathsymb">t</i> tím více, čím je <i class="mathsymb">t</i> malé.</figcaption>
             </figure>
 
-
-            <p>Vzniklý trojúhelník je <b>pravoúhlý</b> a bod <h:math>B</h:math> ve skutečnosti <b>neleží na elipse</b>, ale trochu mimo ni.</p>
-
-            <p>Nicméně při <b> velmi krátké době <i class="mathsymb">t</i> </b> bude <b>rozdíl</b> mezi plochou tohoto trojúhelníku o obsahu <i class="mathsymb">S<sub>p</sub></i> a skutečnou plochou o obsahu <i class="mathsymb">S</i> opsanou 
-                průvodičem zanedbatelný. S poměrně velkou přesností tedy platí <i class="mathsymb">S<sub>p</sub></i>=<i class="mathsymb">S</i>. Je to vlastně takový trik, jak si s tento výpočet usnadnit, 
-                kde důležitou roli hraje ta velmi krátká doba t.</p>
+            <p> Pro <b> velmi krátký čas <i class="mathsymb">t</i> </b> bude <b>rozdíl</b> mezi plochou tohoto trojúhelníka o obsahu <i class="mathsymb">S<sub>p</sub></i> a skutečně opsanou plochou o obsahu <i class="mathsymb">S</i>  
+                zanedbatelný. S poměrně velkou přesností tedy platí <i class="mathsymb">S<sub>p</sub></i>=<i class="mathsymb">S</i>. Tento výsledek bude pro nás klíčový.</p>
             
-            <p>Plocha <i class="mathsymb">S<sub>p</sub></i> takto vzniklého trojúhelníku je dána vztahem:</p>
+            <p>Plocha <i class="mathsymb">S<sub>p</sub></i> takto vzniklého trojúhelníku, resp. plocha opsaná průvodičem planety (za předpokladu toho velmi malého času <i class="mathsymb">t</i>), je dána vztahem</p>
             $${  S_p = \frac{1}{2}r_p v_p t  }$$
+            
+            <p> Pojďme si tuto rovnici více rozebrat. Trajektorie, kterou planeta za krátký čas <i class="mathsymb">t</i> urazí, lze považovat za krátkou úsečku. Ta tvoří <b>kratší odvěsnu</b> vzniklého pravoúhlého trojúhelníku a má délku <i class="mathsymb">v<sub>p</sub>t</i>.</p>
 
-            <p>kde <i class="mathsymb">v<sub>p</sub></i> je vzdálenost, kterou planeta urazí za čas <i class="mathsymb">t</i> při rychlosti <i class="mathsymb">v<sub>p</sub></i>. 
-                Trajektorie, kterou planeta za tento krátký čas urazí, 
-                lze považovat za krátkou úsečku. Ta tvoří <b>kratší odvěsnu</b> vzniklého pravoúhlého trojúhelníku.</p>
+            <p><i class="mathsymb">r<sub>p</sub></i> je <b>vzdálenost planety v perihéliu od Slunce</b>. Tato vzdálenost tvoří <b>delší odvěsnu</b> trojúhelníka.</p>
 
-            <p><i class="mathsymb">r<sub>p</sub></i> je <b>vzdálenost planety (v perihéliu) od Slunce</b>. Tato vzdálenost zase tvoří <b>delší odvěsnu</b> vzniklého pravoúhlého trojúhelníku.</p>
-
-            <p><b>Obsah</b> jakéhokoli <b>pravoúhlého trojúhelníku</b> zjistíme tak, že mezi sebou nejdříve vynásobíme jeho odvěsny. 
-                Tím dostaneme obsah obdélníku, který stačí vydělit dvěma. Rovnicí by se to vyjádřilo následovně:</p>
+            <p><b>Obsah</b> jakéhokoliv <b>pravoúhlého trojúhelníku</b> zjistíme tak, že mezi sebou nejdříve vynásobíme délky jeho odvěsen. 
+                Tím dostaneme obsah obdélníku, který stačí vydělit dvěma. Rovnice by vypadala následovně</p>
                 $$
-                    \frac{\mathrm{prvni~odvesna}\times{\mathrm{druha~odvesna}}}{2}
+                    \frac{\mathrm{délka~první~odvěsny}\times{\mathrm{délka~druhé~odvěsny}}}{2}
                 $$
-            <p>Podobný trojúhelník můžeme zkonstruovat i pro <b>průchod planety aféliem</b>, tedy nejdále od Slunce. 
+            To nám vede na rovnici obsahu plochy <i class="mathsymb">S<sub>p</sub></i> výše. 
+            <p><br></p>
+            <p>Podobně můžeme postupovat, když planeta <b>prochází aféliem</b>, tedy když je planeta nejdále od Slunce. 
                 Takový trojúhelník má obsah daný vztahem</p>
                 $$
                     S_a = \frac{1}{2}r_a v_a t 
                 $$
-            <p><i class="mathsymb">r<sub>a</sub></i> je vzdálenost planety od Slunce</p>
-            <p><i class="mathsymb">v<sub>a</sub></i> je rychlost planety při průletu aféliem</p>
+            <p>kde <i class="mathsymb">r<sub>a</sub></i> je vzdálenost planety od Slunce a <i class="mathsymb">v<sub>a</sub></i> je rychlost planety při průletu v aféliem.</p>
+            <p>Opět budeme předpokládat, že <i class="mathsymb">t</i> je malé, aby <i class="mathsymb">S<sub>a</sub></i>=<i class="mathsymb">S</i>.</p>
 
+            <p><br></p>
             <p>
-                Pokud jsou <b>obě plochy</b> opsány za <b>stejný čas <i class="mathsymb">t</i></b>, tak musí být jejich <b>obsahy</b> podle druhého Keplerova zákona <b>stejné</b>:
+                Pokud byly plochy opsané průvodičem při průletu perihéliem a aféliem za <b>stejné časy <i class="mathsymb">t</i></b>, tak musí být jejich <b>obsahy</b> podle druhého Keplerova zákona <b>stejné</b>
             </p>
             $$
                 {S_a = S_p}
@@ -154,19 +155,20 @@
                 {  \frac{1}{2}r_a v_a t = \frac{1}{2}r_p v_p t   }
             $$
 
-            <p>Po vykrácení rovnice z toho dostáváme</p>
+            <p>Po vykrácení na obou stranách rovnice dostáváme</p>
             $$
                 { r_a v_a = r_p v_p  }
             $$
+            což můžeme dále upravit do tvaru
             $$
                 \frac{v_p}{v_a} = \frac{r_a}{r_p}
             $$
 
-            <p>Z toho plyne, že kolikrát je planeta při průchodu perihéliem <b>blíže ke Slunci</b> než v aféliu, tolikrát tam bude mít <b>větší rychlost</b>.</p>
+            <p>Poslední rovnice je náš výsledek a plyne z ní, že kolikrát je planeta při průchodu perihéliem <b>blíže ke Slunci</b> než v aféliu, tolikrát tam bude mít <b>větší rychlost</b>.</p>
 
             <figure>
                 <img src="ASSETS/1.7.3-model-planet_speeds_relation_model.svg" alt="rychlost v perihéliu a aféliu" style="width:85%">
-                <figcaption>Obr. 4 - Rychlost v perihéliu a aféliu</figcaption>
+                <figcaption>Obr. 4 – Rychlost v perihéliu a aféliu</figcaption>
             </figure>
 
             <a href="#section2">
@@ -198,63 +200,66 @@
         </div>
         <div class="whiteboard whiteparag">
             <p>
-                <b>Plošná rychlost</b>, kterou budeme značit <i class="mathsymb">w</i>, je obsah <b>plochy <i class="mathsymb">S</i></b> opsané průvodičem za <b> velmi krátký čas <i class="mathsymb">t</i></b>. 
-                Oproti tomu, když se běžně bavíme o rychlosti <i class="mathsymb">v</i>,  tak ta udává <b>vzdálenost</b> opsanou za určitý <b>čas</b>. 
+                Víme, že za krátký čas <i class="mathsymb">t</i> opíše průvodič planety malou plochu o obsahu <i class="mathsymb">S</i>. <b>Poměr</b> tohoto obsahu a času, který zabralo tuto plochu opsat, budeme nazývat <b>plošná rychlost</b>. Značit ji budeme <i class="mathsymb">w</i> a rovnice pro ni vypadá takto
+                $$
+                { w=\frac{S}{t}  }
+                $$
+                To nám může připomínat, jak se definuje rychlost – jako poměr vzdálenosti <i class="mathsymb">s</i>, uražené tělesem za čas <i class="mathsymb">t</i>, a tohoto času
+                $$
+                { v=\frac{s}{t}  }
+                $$
+                Zatímco ale <i class="mathsymb">v</i> má rozměr m/s, má <i class="mathsymb">w</i> rozměr m<sup>2</sup>/s.
             </p>
             
-            <p>Plošnou rychlost bychom v rovnici vyjádřili následovně:</p>
-
-            $$
-                { w=\frac{S}{t}  }
-            $$
+           
             
-            <p>Z druhého Keplerova zákona plyne, že <b>plošná rychlost</b> je konstanta, což znamená, že je pro danou planetu pořád <b>stejná</b>.</p>
+            <p>Z druhého Keplerova zákona plyne, že <b>plošná rychlost je konstantní</b> – jak se planeta pohybuje po své elipse (a přitom se mění její vzdálenost i rychlost), hodnota plošné rychlosti bude pořád stejná. Jak to z Keplerova zákona plyne, si teď ukážeme.</p>
 
-            <p>Například v perihéliu a aféliu jsou obsahy ploch opsaných za stejné a velmi malé časy <i class="mathsymb">t</i>:</p>
+            <p>
+                Zvolme si dva libovolné body na elipse a v nich sledujme průlet planety. Za krátké časy <i class="mathsymb">t</i> opíše jednou plochu o obsahu <i class="mathsymb">S<sub>1</sub></i>, po druhé plochu o obsahu <i class="mathsymb">S<sub>2</sub></i>. Plošné rychlosti v těchto situacích budou
+                $$
+                w_1 = \frac{S_1}{t}
+                $$
+                $$
+                w_2 = \frac{S_2}{t}
+                $$
+                Podle druhého Keplerova zákona <i class="mathsymb">S<sub>1</sub></i> = <i class="mathsymb">S<sub>2</sub></i>, z čehož plyne
+                $$
+                w_1 = w_2
+                $$
+                Protože jsme tyto body na elipse mohli zvolit jakkoliv, platí tento výsledek pro všechny možné dvojice. To ale znamená, že všude na elipse bude mít planeta stejnou plošnou rychlost <i class="mathsymb">w</i>, tj.
+                $$
+                w = \mathrm{konstanta}
+                $$
+            </p>
+
+            <p><br></p>
+            <p>Než půjdeme dále, pozastavme se ještě v aféliu a perihéliu a spočítejme si pro ně plošnou rychlost. Obsahy trojúhelníků jsou</p>
             $$
                 S_a = \frac{1}{2}r_a v_a t 
             $$
             $$
                 S_p = \frac{1}{2}r_p v_p t 
             $$
-            <p>a tedy odpovídající plošné rychlosti jsou:</p>
+            <p> Z definice plošné rychlosti pak dostáváme</p>
             $$
                 w_a = \frac{1}{2}r_a v_a 
             $$
             $$
                 w_p = \frac{1}{2}r_p v_p 
             $$
-            <p>Vztahy pro obsahy lze tak přepsat do podoby:</p>
+            Protože plošná rychlost je konstanta pohybu, platí:
             $$
-                S_a = w_a t 
+                w_a = w_p 
             $$
             $$
-                S_p = w_p t  
+                \frac{1}{2}r_a v_a = \frac{1}{2}r_p v_p 
             $$
-            <p>Druhý Keplerův zákon říká:</p>
+            z čehož po úpravách plyne
             $$
-                S_a = S_p
+                \frac{v_p}{v_a} = \frac{r_a}{r_p}
             $$
-            <p>a proto</p>
-            $$
-                w_a t = w_p t 
-            $$
-            <p>Po vykrácení <i class="mathsymb">t</i> na obou stranách dostáváme:</p>
-            $$
-                w_a = w_p
-            $$
-            <p>
-            Plošné rychlosti v perihéliu a aféliu jsou tedy stejné. Dá se ale ukázat, že toto pravidlo platí pro všechny body na eliptické trajektorii 
-            dané planety. Takže například pro libovolný bod <h:math>X</h:math> na trajektorii, kde by planeta měla plošnou rychlost <i class="mathsymb">w<sub>X</sub></i>, stále platí:
-            </p>
-            $$
-                w_X=w_a=w_p
-            $$
-            <p>Zkrátka, plošná rychlost je pro danou planetu pořád stejná</p>
-            $$
-                w = \mathrm{konstanta}
-            $$
-
+            Tento výsledek už jsme jednou dostali, jen jsme přímo nepracovali s pojmem plošná rychlost.
             <a href="#section3">
                 <div class="arrow-up"></div>
             </a>
@@ -298,7 +303,7 @@
         </div>
         <div class="whiteboard whiteparag">
             
-            <p>Abychom si pohyb planety kolem Slunce dokázali ještě více představit, je níže přiložena interaktivní ilustrace takovéhoto pohybu.</p>
+            <p>Abychom si pohyb planety kolem Slunce dokázali ještě lépe představit, je níže přiložena interaktivní ilustrace tohoto pohybu.</p>
 
             <div class="inter_fig">
                 <iframe src="inter_fig_example.html" height="600" width="450" style="border:none;" title="Pohyb planety kolem Slunce" frameBorder="0"></iframe>
@@ -306,30 +311,30 @@
             <div class="popisek_k_interaktivni_ilustraci">
                 <h3>Popisek:</h3>
                 <br>
-                <p>Obrázek má dva interaktivní prvky: Bod (<i>Prázdné ohnisko</i>) a červenou křivku (elipsu, trajektorii planety).</p> 
+                <p>Obrázek má dva interaktivní prvky – <b>Bod</b> (<i>Prázdné ohnisko</i>) a <b>červenou elipsu</b>.</p> 
                 <ul class="description">
                     <li>V obrázku můžete táhnout s bodem <i>Prázdné ohnisko</i>, čímž nastavíte protáhlost elipsy.</li>
-                    <li>Velikost elipsy lze měnit tažením za elipsu (červenou křivku).</li>
+                    <li>Velikost elipsy lze měnit poklikem na ni a jejím tažením.</li>
                 </ul>
                 <p>Nad obrázkem jsou k dispozici checkboxy, které mají funkce:</p>
                 <ul class="description">
-                    <li><i>Průvodič</i> - zobrazí se průvodič (spojnice planety a Slunce)</li>
-                    <li><i>Šipka rychlosti</i> - zobrazí se rychlost planety po své trajektorii (kterou je elipsa)</li>
-                    <li><i>Perihélium</i> - zobrazí se perihélium (přísluní, bod nejbližší Slunci na elipse)</li>
-                    <li><i>Afélium</i> - zobrazí se afélium (odsluní, bod nejdále Slunci na elipse)</li>
+                    <li><i>Průvodič</i> – zobrazí se průvodič (spojnice planety a Slunce)</li>
+                    <li><i>Šipka rychlosti</i> – zobrazí se okamžitá rychlost planety</li>
+                    <li><i>Perihélium</i> – zobrazí se perihélium (přísluní, bod elipsy nejbliže Slunci)</li>
+                    <li><i>Afélium</i> – zobrazí se afélium (odsluní, bod elispy nejdále od Slunce)</li>
                 </ul>
                 <p>Nad obrázkem jsou k dispozici tlačítka, které mají funkce:</p>
                 <ul class="description">
-                    <li><i>Opsaná plocha</i> - plocha opsaná průvodičem za libovolně dlouhou dobu (2. stisk ukončí vykreslování)</li>
-                    <li><i>Plocha opsaná za 3 sekundy</i> -  plocha opsaná průvodičem během 3 sekund</li>
-                    <li><i>Smazat plochy</i> - smaže poslední plochu</li>
+                    <li><i>Opsaná plocha</i> – plocha opsaná průvodičem za libovolně dlouhou dobu (2. stisk ukončí vykreslování)</li>
+                    <li><i>Plocha opsaná za 3 sekundy</i> –  plocha opsaná průvodičem během 3 sekund</li>
+                    <li><i>Smazat plochy</i> – smaže poslední plochu</li>
                 </ul>
                 <p>V obrázku jsou vykreslovány veličiny:</p>
                 <ul class="description">
-                    <li><i>vp</i> - rychlost v perihéliu</li>
-                    <li><i>va</i> - rychlost v aféliu</li>
-                    <li><i>v</i> - okamžitá rychlost planety</li>
-                    <li><i>&epsilon;</i> - číselná výstřednost (numerická excentricita) elipsy</li>
+                    <li><i class="mathsymb">v<sub>p</sub></i> – rychlost v perihéliu</li>
+                    <li><i class="mathsymb">v<sub>a</sub></i> – rychlost v aféliu</li>
+                    <li><i class="mathsymb">v</i> – okamžitá rychlost planety</li>
+                    <li><i class="mathsymb">&epsilon;</i> – číselná výstřednost (numerická excentricita) elipsy</li>
                 </ul>
             </div>
 
@@ -371,17 +376,17 @@
         </div>
         <div class="whiteboard whiteparag">
             
-            <p>1. Plošná rychlost je: </p>
+            <p>1. Plošná rychlost je </p>
             <p><input type="radio" name="question1" id="q11"> <label for="q11"> rychlost s jednotkou m/s, kterou prolétá planeta v okoli perihélia. </label></p>
-            <p><input type="radio" name="question1" id="q12"> <label for="q12"> "obyčejné" rychlosti <i class="mathsymb">v</i> pronásobená vzdáleností planety od Slunce. </label></p>
-            <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> podíl obsahu plochy opsané průvodičem a času, který zabralo tuto plochu opsat. Má rozměr m<sup>2</sup>/s. </label></p>                   
+            <p><input type="radio" name="question1" id="q12"> <label for="q12"> rychlosti <i class="mathsymb">v</i> pronásobená vzdáleností planety od Slunce. </label></p>
+            <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> definována jako podíl obsahu plochy <i class="mathsymb">S</i>, kterou opsal průvodič za krátký čas <i class="mathsymb">t</i>, a tohoto času. Má rozměr m<sup>2</sup>/s. </label></p>                   
             <br>
-            <p>2.  Druhý Keplerův zákon říká, že:  </p>
-            <p><input type="radio" name="question2" id="q21"> <label for="q21"> planety ve Sluneční soustavě se pohybují po elipsách málo odlišných od kružnic. </label></p>
-            <p><input type="radio" name="question2" id="q22"> <label for="q22"> plošná rychlost je velična, která se v čase mění. </label></p>
-            <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> obsahy ploch opsaných spojnicí planeta-Slunce za stejné časové intervaly jsou stejné. </label></p>
+            <p>2.  Z druhého Keplerova zákona plyne, že  </p>
+            <p><input type="radio" name="question2" id="q21"> <label for="q21"> planety se ve sluneční soustavě pohybují po elipsách málo odlišných od kružnic. Elipsy sdílí společné ohnisko, v němž se nachází Slunce. </label></p>
+            <p><input type="radio" name="question2" id="q22"> <label for="q22"> plošná rychlost není konstantou pohybu. </label></p>
+            <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> obsahy různých ploch opsaných průvodičem jsou stejné, pokud byly opsány za stejné časové intervaly. </label></p>
             <br>
-            <p>3.  Poměr rychlostí v perihéliu a aféliu je daný:  </p>
+            <p>3.  Poměr rychlostí v perihéliu a aféliu je daný</p>
             <p><input type="radio" name="question3" id="correct3"> <label for="correct3"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1+\epsilon}{1-\epsilon}$$ </label></p>
             <p><input type="radio" name="question3" id="q32"> <label for="q32"> touto rovnicí: $$ \frac{v_p}{v_a} = \frac{1-\epsilon}{1+\epsilon}$$ </label></p>
             <p><input type="radio" name="question3" id="q33"> <label for="q33"> touto rovnicí: $$ \frac{v_p}{v_a} = \sqrt{\frac{1+2\epsilon}{1-2\epsilon}}$$ </label> </p>
