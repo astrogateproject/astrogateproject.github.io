@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" href="content_style.css">
+
+	<title>Side Menu</title>
+	<style>
+		/* * {
+			border: 1px solid red;
+		} */
+
+		:root {
+			--menusize: 300px;
+			--menucolor: var(--maincolor);
+		}
+
+		#menu {
+			position: fixed;
+			top: 0;
+			left: 0;
+			height: 100%;
+			border-radius: 0px 5px;
+			width: var(--menusize);
+			background-color: var(--menucolor);
+			/* opacity: 0.8; */
+			/* background-color: red; */
+			color: #fff;
+			overflow: visible;
+			transition: left 0.4s ease-in-out;
+		}
+
+		#menu.closed {
+			left:calc(var(--menusize)* -1);
+			/* menu size in negative value */
+
+		}
+
+		#menu ul {
+			margin: 0;
+			padding: 0;
+			list-style: none;
+		}
+
+		#menu ul a:hover{
+			color: #943333;
+		}
+
+		#menu ul li {
+			padding: 20px 0px 0px 20px;
+			/* border-bottom: 1px solid #444; */
+		}
+
+		#menu ul li a {
+			color: #fff;
+			text-decoration: none;
+		}
+
+		#menu ul li ul li{
+			margin: 0;
+			padding: 20px 0px 0px 20px;
+			list-style: none;
+			display: block;
+		}
+
+		#menu button {
+			position:relative;
+			border: 1px;
+			border-radius: 0px 5px 5px 0px;
+			left: calc(var(--menusize) - 38px);
+			background-color: var(--menucolor);
+			/* the size of menu minus size of the button */
+			top: 0px;
+			padding: 10px;
+			transition: left 0.4s ease-in-out;
+		}
+
+		#menu.closed button {
+			position:relative;
+			left: var(--menusize);
+			top: 0px;
+			padding: 10px;
+			content: "x";
+		}
+
+		@media screen and (max-width: var(--menusize)) {
+			#menu {
+				background-color: #943333;
+			}
+
+		}
+	</style>
+</head>
+
+<body>
+	<div id="menu" class="closed">
+		<button onclick="toggleMenu()">|||</button>
+		<ul>
+			<li><a href="#">Menu Item 1</a></li>
+			<li><a href="#">Menu Item 2</a>
+				<ul>
+					<li><a href="#">Item whatever</a></li>
+					<li><a href="#">Submenu Item 2</a></li>
+					<li><a href="#">Submenu Item 3</a></li>
+				</ul>
+			</li>
+			<li><a href="#">Menu Item 3</a></li>
+		</ul>
+	</div>
+
+	<script>
+		const menu = document.getElementById("menu");
+		const content = document.getElementById("content");
+		const checker = document.getElementById("checker");
+
+		const minWinWidth = 700;
+
+		const menuWidth = "300px";
+
+		document.documentElement.style.setProperty('--menusize', window.innerWidth < minWinWidth ? '100%' : (menuWidth));
+
+		// This function closes or opens side menu based on the window width
+		window.addEventListener('resize', function(event) {
+			if (window.innerWidth < minWinWidth) {
+				document.documentElement.style.setProperty('--menusize', "100%");
+    	} 
+
+			else if (window.innerWidth >= minWinWidth) {
+				document.documentElement.style.setProperty('--menusize', menuWidth);
+
+
+			}
+		});
+
+		//This funcion checks if the menu should load collapsed on small screens
+			if (window.innerWidth < minWinWidth) {
+				menu.classList.add("closed");
+			} else {
+      	menu.classList.remove("closed");
+    	}
+
+		
+		// This is for the button on the side menu to close and open it
+		function toggleMenu() {
+			if (menu.classList.contains("closed")) {
+				menu.classList.remove("closed");
+			}  else {
+				menu.classList.add("closed");
+			}
+		}
+	
+	</script>
+
+</body>
+</html>

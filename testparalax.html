@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<style>
+    * {
+        /* border: 1px salmon solid; */
+
+    }
+
+    :root {
+        --bgcolor: #467397;
+    }
+
+    body {
+        /* border: 1px solid greenyellow; */
+        top: 0;
+        left: 0;
+        margin: 0;
+        background-color: pink;
+        overflow: hidden;
+    }
+    
+    .contentwrapper {
+        border: 1px solid orange;
+        background-color: var(--bgcolor);
+
+        color: white;
+        text-align: justify;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 1rem;
+       
+        height: 100vh;
+
+        perspective: 10px;
+        
+        transform-style: preserve-3d;
+
+        box-sizing:border-box;
+        /* padding-bottom: 50px; */
+        
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .contentwrapper::after {
+        content: '';
+        /* border: 3px solid magenta; */
+        width: 100%;
+        height: 135vh;
+
+        top: 0vh;
+        left: 0px;
+        
+        position: absolute;
+
+        background:
+        linear-gradient(transparent 70vh, var(--bgcolor) 120vh), 
+        url("ASSETS/prototype_background_01.jpg");
+
+        background-size: cover;
+
+        z-index: -1;
+
+        transform: translateZ(-40px) scale(5.1);
+    }
+    
+    .section {
+
+        /* border: 1px solid blue; */
+        max-width: 600px;
+        padding: 30px;
+        margin: 5vh auto 10vh auto;
+
+        border-radius: 10px;
+
+        /* transform: translateZ(4px) scale(2); */
+
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.682);
+    }
+
+
+
+
+</style>
+
+<body>
+    <div class="contentwrapper">
+        <div class="section">
+            <h1>What are you doing today?</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+        </div>
+        <div class="section">
+            <h1>What are you doing today?</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+        </div>
+        <div class="section">
+            <h1>What are you doing today?</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+        </div>
+        <div class="section">
+            <h1>What are you doing today?</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+        </div>
+        <div class="section">
+            <h1>What are you doing today?</h1>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Iusto voluptatum animi aliquam nihil quidem suscipit, 
+                explicabo debitis doloribus architecto quasi quae nesciunt 
+                esse eos omnis amet vel non eveniet dolores.
+            </p>
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+
+</html>
+
