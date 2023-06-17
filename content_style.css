@@ -3,6 +3,10 @@
 
 }
 
+html{
+    /* background-color: var(--bgcolor); */
+}
+
 :root {
 
     /* COLORS */
@@ -22,7 +26,7 @@
     /* SIZES */
 
     --maxcolw: 700px;
-    --mincolw: 500px;
+    --mincolw: 350px;
 
     --corners: 8px;
 
@@ -33,23 +37,25 @@
 }
 
 body{
-    /* border: 1px solid greenyellow;
-    box-sizing: border-box; */
+    /* border: 1px solid greenyellow; */
+    box-sizing: border-box;
     
     margin: 0;
-    top:0;
-    min-width: var(--mincolw);
+    /* top: 60px; */
+    /* min-width: var(--mincolw); */
 
     color: var(--textcolor);
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1rem;
+    font-size: 1.1rem;
 
     background-color: var(--bgcolor);
 
     background:
-    linear-gradient(var(--bgcolora) 90vw, var(--bgcolor) 145vw),
+    linear-gradient(var(--bgcolora) 90vw, var(--bgcolor) 150vw),
     url("ASSETS/prototype_background_01.jpg");
+
+    background-repeat: no-repeat;
 
     background-size: contain;
 
@@ -356,8 +362,8 @@ body{
     
     margin-bottom: 40px;
     
-    font-size: 1rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.8;
     color: var(--textcolor);
 }
 

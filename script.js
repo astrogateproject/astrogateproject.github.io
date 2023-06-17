@@ -2,12 +2,12 @@
 // BACKGROUND PARALAX SCRIPT
 // ********************
 
-    const speed = 0.7;
+    // const speed = 0.7;
   
-    window.addEventListener('scroll', function() {
-      const yPos = (window.pageYOffset * speed);
-      document.body.style.backgroundPosition = `center ${yPos}px`;
-    });
+    // window.addEventListener('scroll', function() {
+    //   const yPos = (window.pageYOffset * speed);
+    //   document.body.style.backgroundPosition = `center ${yPos}px`;
+    // });
 
 
 
@@ -28,6 +28,7 @@
     //convert to integer
     minColWidth = minColWidth.substring(0, minColWidth.length - 2);
     minColWidth = parseInt(minColWidth);
+    // console.log('minColWidth', minColWidth);
 
     var menuWidth = 300;
 
@@ -72,16 +73,20 @@
  
 // SIDE MENU SCIRPTS
 
+    var menuTreshold = 500;
+
     // RESIZES side menu based on the window width
-    document.documentElement.style.setProperty('--menusize', window.innerWidth < minColWidth ? '100%' : (menuWidth + "px"));
+    document.documentElement.style.setProperty('--menusize', window.innerWidth < menuTreshold ? '100%' : (menuWidth + "px"));
 
     window.addEventListener('resize', function(event) {
-        if (window.innerWidth < minColWidth) {
+        if (window.innerWidth < menuTreshold) {
             document.documentElement.style.setProperty('--menusize', "100%");
+            // console.log('window.innerWidth', window.innerWidth);
         } 
 
-        else if (window.innerWidth >= minColWidth) {
+        else if (window.innerWidth >= menuTreshold) {
             document.documentElement.style.setProperty('--menusize', (menuWidth + "px"));
+            // console.log('window.innerWidth', window.innerWidth);
         }
     });
 
