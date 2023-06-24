@@ -11,7 +11,7 @@ html{
 
     /* COLORS */
     --maincolor: rgb(26, 101, 163);
-    --maincolora: rgba(26, 101, 163, 0.77);
+    --maincolora: rgba(26, 101, 163, 0.9);
     
     
     --textcolor: white;
@@ -28,9 +28,11 @@ html{
     --maxcolw: 700px;
     --mincolw: 350px;
 
+    --globalpadding: 20px;
+
     --corners: 8px;
 
-    --headerh:30px;
+    --headerh:36px;
 
     scroll-behavior: smooth;
 
@@ -41,6 +43,7 @@ body{
     box-sizing: border-box;
     
     margin: 0;
+    padding: 0;
     /* top: 60px; */
     /* min-width: var(--mincolw); */
 
@@ -49,11 +52,11 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1.1rem;
 
-    background-color: var(--bgcolor);
-
     background:
-    linear-gradient(var(--bgcolora) 90vw, var(--bgcolor) 150vw),
+    linear-gradient(var(--bgcolora) 100vw, var(--bgcolor) 145vw),
     url("ASSETS/prototype_background_01.jpg");
+
+    background-color: var(--bgcolor);
 
     background-repeat: no-repeat;
 
@@ -91,18 +94,10 @@ body{
     /* border: 1px solid red; */
     box-sizing: border-box;
 
-    vertical-align: middle;
-    text-align: left;
-
     font-weight: bold;
 
-    width: 300px;
-    height: 100%;
-
-    padding: 3.5px 10px;
-    display: flex;
-
-    z-index: 0;
+    text-align: left;
+    padding: 5px 10px;
 }
 
 #astrogate a:link, a:visited {
@@ -159,14 +154,16 @@ body{
 
 #menu {
     position: fixed;
-    top: 30px;
+    top: var(--headerh);
     left: 0;
     height: 100%;
     border-radius: 0px 5px;
     width: var(--menusize);
 
     background-color: var(--maincolora);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
+
+
 
     overflow: visible;
     transition: left 0.4s ease-in-out;
@@ -314,13 +311,6 @@ body{
     display: block;
 }
 
-@media screen and (max-width: var(--menusize)) {
-    #menu {
-        background-color: #943333;
-    }
-
-}
-
 /* ----- */
 /* STŘEDOVÝ SLOUPEC URČUJÍCÍ ŠÍŘKU OBSAHU */
 /* ----- */
@@ -330,9 +320,38 @@ body{
     max-width: var(--maxcolw);
     min-width: var(--mincolw);
 
-    position: relative;
-    top: calc(var(--headerh) + 34px);
-    margin: auto;
+    /* position: relative; */
+    margin: var(--headerh) auto 0px auto;
+}
+
+.navigation {
+    /* border: 1px solid pink; */
+    display: flex;
+    justify-content: end;
+    justify-content: space-between;
+    /* padding: var(--globalpadding); */
+    margin-bottom: 40px;
+    margin-top: 10px;
+}
+
+.navigation button {
+        position:relative;
+        border: 0px;
+        border-radius: var(--corners);
+
+        padding: 18px 10px;
+        width: 220px;
+        margin: 0px var(--globalpadding);
+    
+        background-color: var(--maincolor);
+        color: var(--textcolor);
+
+        font-size: 18px;
+}
+
+.navigation button:hover {
+    background-color: var(--highlight);
+    color: var(--maincolor);
 }
 
 /* ----- */
@@ -530,27 +549,23 @@ details summary:hover, summary:active {
     color: white;
 }
 
-footer {
-    /* border: 1px solid red; */
-    font-size: 12px;
-    color: rgb(143, 143, 143);
-    text-align: center;
 
-}
-
-.logo_background{
-    /* border: 1px solid rgb(23, 255, 23); */
+.pagefooter{
+    /* border: 1px solid rgb(255, 23, 23); */
     height: auto;
     background: white;
     border-radius: var(--corners) var(--corners) 0px 0px;
     text-align: center;
     padding: 0px 0px 20px 0px;
+
+    font-size: 12px;
+    color: rgb(143, 143, 143);
 }
 
-.logo_content img{
-    /* border: 1px solid salmon; */
+.pagefooter img{
+    /* border: 1px solid rgb(250, 114, 218); */
     height: 50px;
-    margin: 20px 15px;
+    margin: 30px 15px;
 }
 
 
@@ -642,16 +657,14 @@ input[type="submit"] {
     color: var(--textcolor);
     cursor: pointer;
     padding: 18px;
-    width: 200px;
+    width: 220px;
     text-align: center;
     outline: none;
-    font-size: 15px;
+    font-size: 18px;
     border: none;
 
     border-radius: var(--corners);
     margin-bottom: 10px;
-
-    font-weight: bold;
    }
 
 input[type="submit"]:hover{
