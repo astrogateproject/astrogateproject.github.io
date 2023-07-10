@@ -21,7 +21,7 @@ html{
     --bgcolor: #0f283c;
     --bgcolora: #061e32b7;
     
-    --sectioncolor: #0c1d2cb0;
+    --sectioncolor: #0c1d2cd7;
 
     /* SIZES */
 
@@ -136,8 +136,8 @@ body{
     /* border: 1px solid red; */
     box-sizing: border-box;
     display: inline-block;
-    height: 2px;
-    width: 50%;
+    height: 3px;
+    width: 0%;
     background-color: var(--highlight);
     position: relative;
     bottom: calc(-50% + 1px);
@@ -321,7 +321,7 @@ body{
     min-width: var(--mincolw);
 
     /* position: relative; */
-    margin: var(--headerh) auto 0px auto;
+    margin: calc(var(--headerh) + 40px) auto 0px auto;
 }
 
 .navigation {
@@ -340,7 +340,7 @@ body{
         border-radius: var(--corners);
 
         padding: 18px 10px;
-        width: 220px;
+        width: 180px;
         margin: 0px var(--globalpadding);
     
         background-color: var(--maincolor);
@@ -373,7 +373,7 @@ body{
 .whiteboard{
     height: auto;
     background-color: var(--sectioncolor);
-    backdrop-filter: blur(10px);
+    /* backdrop-filter: blur(10px); */
     padding: 20px 20px 30px 20px;
     border-radius: var(--corners);
     

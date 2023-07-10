@@ -2,12 +2,12 @@
 // BACKGROUND PARALAX SCRIPT
 // ********************
 
-    // const speed = 0.7;
+    const speed = 0.7;
   
-    // window.addEventListener('scroll', function() {
-    //   const yPos = (window.pageYOffset * speed);
-    //   document.body.style.backgroundPosition = `center ${yPos}px`;
-    // });
+    window.addEventListener('scroll', function() {
+      const yPos = (window.pageYOffset * speed);
+      document.body.style.backgroundPosition = `center ${yPos}px`;
+    });
 
 
 
@@ -70,6 +70,13 @@
 
         }
     });
+
+    //changes titles progressbard based on scroll
+    window.addEventListener('scroll', function() {
+        var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
+        document.getElementById('pageprogressbar').style.width = scrollPercentage + '%';
+      });
+      
  
 // SIDE MENU SCIRPTS
 
