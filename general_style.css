@@ -140,13 +140,13 @@ body{
 
 
 .container_button button:hover span{
-    width: 100%;
+    width: 100%
 }
+
 .container_button button:hover{
     transition: 0.1s;
 
 }
-
 
 span{
     background: rgb(255, 255, 255);

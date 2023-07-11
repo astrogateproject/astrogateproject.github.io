@@ -65,9 +65,15 @@ body{
     
 }
 
-/* ----- */
+
+
+
+/* ----------------------------------------------------- */
 /* HEADER */
-/* ----- */
+/* ----------------------------------------------------- */
+
+
+
 
 .header {
     top: 0;
@@ -144,9 +150,15 @@ body{
     border-radius: 2px;
 }
 
-/* ----- */
+
+
+
+/* ----------------------------------------------------- */
 /* SIDE MENU STYLE */
-/* ----- */
+/* ----------------------------------------------------- */
+
+
+
 
 :root {
     --menusize: ;
@@ -311,9 +323,15 @@ body{
     display: block;
 }
 
-/* ----- */
+
+
+
+/* ----------------------------------------------------- */
 /* STŘEDOVÝ SLOUPEC URČUJÍCÍ ŠÍŘKU OBSAHU */
-/* ----- */
+/* ----------------------------------------------------- */
+
+
+
 
 .main_content {
     /* border: 1px solid yellow; */
@@ -354,9 +372,15 @@ body{
     color: var(--maincolor);
 }
 
-/* ----- */
+
+
+
+/* ----------------------------------------------------- */
 /* SEKCE */
-/* ----- */
+/* ----------------------------------------------------- */
+
+
+
 
 .whiteboard_title {
     /* border: 1px solid greenyellow; */
@@ -640,7 +664,15 @@ details summary:hover, summary:active {
     overflow: hidden;
   }
 
+
+
+
+/* ----------------------------------------------------- */ 
 /* TESTOVANI ODPOVEDI */
+/* ----------------------------------------------------- */
+
+
+
 
 .whiteboard.test {
     background-color: #3c4f5cbd;
@@ -684,3 +716,138 @@ input[type="submit"]:hover{
 .popisek_k_interaktivni_ilustraci ul{
     padding-left: 15px;
 }
+
+
+
+
+/* ----------------------------------------------------- */ 
+/* INDEX - UVODNI STRANKA STYLE */
+/* ----------------------------------------------------- */
+
+.anim_horizontal{
+    opacity: 0;
+    transform: translateX(30px);
+    animation: moveleft 1s ease-out forwards; /*0.5s*/
+}
+
+.anim_vertical{
+    opacity: 0;
+    transform: translateY(30px);
+    animation: moveleft 1s ease-out forwards; /*0.5s*/
+}
+
+
+
+.title_page_container2{
+    margin-top: 15%;
+}
+
+.title1_project{
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 3.2rem;
+    animation-delay: 0.1s;
+}
+
+.title2_project{
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 15px;
+    animation-delay: 0.4s; /* 0.2s */
+}
+
+.title3_project{
+    text-align: center;
+    color: var(--maincolor);
+    font-size: 15px;
+    animation-delay: 0.8s; /*0.4s*/
+}
+
+.container_button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation-delay: 0.8s; /*0.4s*/
+}
+
+.container_button button{
+    /* width: 150px; */
+    padding: 12px 12px 12px 12px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 50px;
+    font-weight: bold;
+    border: 2px solid var(--maincolor);
+    background: transparent;
+    color: rgb(255, 255, 255);
+    outline: none;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+    z-index: 0;
+    font-size: 20px;
+}
+
+.container_button button:hover span{
+    width: 100%
+}
+
+.container_button button:hover{
+    transition: 0.1s;
+}
+
+a.container_button_a{
+    color:var(--maincolor);
+}
+
+.background-color{
+    background: white;
+    margin-left: auto; 
+    margin-right: auto; 
+
+    display: block;
+    min-width: 350px;
+    max-width: 700px;
+    padding-bottom: 10px; 
+    margin-top: 10px; 
+    margin-bottom: 10px; 
+    border-radius: 10px;
+    animation-delay: 0.6s;
+}
+
+.logo{
+    /* border: 1px solid red; */
+    /* display: block; */
+    /* justify-content: center; */
+    /* align-items: center; */
+    text-align: center;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+
+a img{
+    height: 50px;
+    margin: 30px;
+}
+
+footer{
+   /* color: rgba(255, 255, 255, 0.616); */
+   text-align: center;
+   color:rgb(143, 143, 143);
+   margin-bottom: 5px;
+   font-size: 12px;
+}
+
+@keyframes moveleft { 100%{opacity: 1;
+    transform: translatex(0px)}};
+
+
+    
+
+
+
+
+
+
+
