@@ -27,12 +27,10 @@ html{
 
     --maxcolw: 700px;
     --mincolw: 350px;
-
     --globalpadding: 20px;
-
     --corners: 8px;
-
     --headerh:36px;
+    --textsize:1.1rem;
 
     scroll-behavior: smooth;
 
@@ -44,13 +42,11 @@ body{
     
     margin: 0;
     padding: 0;
-    /* top: 60px; */
-    /* min-width: var(--mincolw); */
 
     color: var(--textcolor);
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 1.1rem;
+    font-size: var(--textsize);
 
     background:
     linear-gradient(var(--bgcolora) 100vw, var(--bgcolor) 145vw),
@@ -353,23 +349,33 @@ body{
 }
 
 .navigation button {
-        position:relative;
-        border: 0px;
-        border-radius: var(--corners);
+    position:relative;
+    border: 0px;
+    border-radius: var(--corners);
 
-        padding: 18px 10px;
-        width: 180px;
-        margin: 0px var(--globalpadding);
-    
-        background-color: var(--maincolor);
-        color: var(--textcolor);
+    padding: 18px 10px;
+    width: 180px;
+    /* margin: 0px var(--globalpadding); */
 
-        font-size: 18px;
+    background-color: var(--maincolor);
+    color: var(--textcolor);
+
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.navigation .next::after {
+    content: 'DÁLE  >';
+}
+
+.navigation .previous::after {
+    content: '< ZPĚT';
 }
 
 .navigation button:hover {
     background-color: var(--highlight);
     color: var(--maincolor);
+    transition: 0.2s;
 }
 
 
@@ -738,67 +744,85 @@ input[type="submit"]:hover{
 
 
 
-.title_page_container2{
-    margin-top: 15%;
+
+
+.landingbody{
+    /* border: 1px solid yellow !important; */
+    height: 100vh;
+    overflow: hidden;
+    text-align: center;
+    
+    background-size: cover !important;
+    background:
+    linear-gradient(var(--bgcolora) 50vh, var(--bgcolor) 90vh),
+    url("ASSETS/landing_background.jpg");
 }
 
-.title1_project{
+.LandingTitle1{
     text-align: center;
-    color: var(--maincolor);
-    font-size: 3.2rem;
-    animation-delay: 0.1s;
+    color: var(--textcolor);
+    font-size: 4rem;
+
+    margin-top: 25%;
 }
 
-.title2_project{
+.LandingTitle2{
     text-align: center;
-    color: var(--maincolor);
-    font-size: 15px;
+    color: var(--highlight);
+    font-size: var(--textsize);
+
     animation-delay: 0.4s; /* 0.2s */
 }
 
-.title3_project{
-    text-align: center;
-    color: var(--maincolor);
-    font-size: 15px;
-    animation-delay: 0.8s; /*0.4s*/
-}
-
-.container_button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    animation-delay: 0.8s; /*0.4s*/
-}
-
-.container_button button{
+.landingbody button{
     /* width: 150px; */
-    padding: 12px 12px 12px 12px;
+    position: relative;
+    padding: 20px;
+    margin-top: 100px;
+    margin-bottom: 100px;
+
     text-align: center;
-    margin-top: 10px;
-    border-radius: 50px;
-    font-weight: bold;
-    border: 2px solid var(--maincolor);
-    background: transparent;
-    color: rgb(255, 255, 255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: var(--textsize);
+    color: var(--textcolor);
+
+    border-radius: var(--corners);
+    border: var(--maincolor);
+    background-color: var(--maincolor);
+
     outline: none;
     cursor: pointer;
-    position: relative;
     overflow: hidden;
 
     z-index: 0;
-    font-size: 20px;
+    animation-delay: 0.6s; /*0.4s*/
 }
 
-.container_button button:hover span{
-    width: 100%
+.landingbody button span {
+    position: absolute;
+    height: 100%;
+    width: 0;
+    left: 0;
+    bottom: 0;
+
+    background: var(--highlight);
+    border-radius: var(--corners);
+
+    z-index: -1;
+    transition: 0.2s;
 }
 
-.container_button button:hover{
-    transition: 0.1s;
+.landingbody button:hover {
+    color: var(--maincolor);
 }
 
-a.container_button_a{
-    color:var(--maincolor);
+.landingbody button:hover span{
+    width: 100%;
+    transition: 0.2s;
+}
+
+.landingbody a{
+    color:var(--textcolor);
 }
 
 .background-color{
@@ -812,18 +836,13 @@ a.container_button_a{
     padding-bottom: 10px; 
     margin-top: 10px; 
     margin-bottom: 10px; 
-    border-radius: 10px;
-    animation-delay: 0.6s;
+    border-radius: var(--corners);
+    animation-delay: 0.8s;
 }
 
-.logo{
+.logo {
     /* border: 1px solid red; */
-    /* display: block; */
-    /* justify-content: center; */
-    /* align-items: center; */
     text-align: center;
-    /* margin-left: auto;
-    margin-right: auto; */
 }
 
 a img{
@@ -832,7 +851,6 @@ a img{
 }
 
 footer{
-   /* color: rgba(255, 255, 255, 0.616); */
    text-align: center;
    color:rgb(143, 143, 143);
    margin-bottom: 5px;
