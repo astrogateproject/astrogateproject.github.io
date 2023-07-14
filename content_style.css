@@ -1,11 +1,11 @@
-*{
-    /* border: 1px solid red; */
+/* *{
+    border: 1px solid red;
 
 }
 
 html{
-    /* background-color: var(--bgcolor); */
-}
+    background-color: var(--bgcolor);
+} */
 
 :root {
 
@@ -411,7 +411,7 @@ body{
     
     margin-bottom: 40px;
     
-    font-size: 1.1rem;
+    font-size: var(--textsize);
     line-height: 1.8;
     color: var(--textcolor);
 }
@@ -423,8 +423,9 @@ body{
 .whiteboard b{
     background-color: var(--emphasis);
     display: inline;
+    color: var(--highlight);
     box-sizing: border-box;
-    font-weight: bold;
+    font-weight: normal;
     padding: 5px 6px;
     border-radius: 6px;
 }
@@ -476,19 +477,6 @@ body{
     margin: 0;
     padding: 0;
 }
-
-/* .figure_small1{
-    float: left;
-    width: 40%;
-    padding: 5px;
-    margin-left: 5%;
-}
-
-.figure_small2{
-    float: left;
-    width: 50%;
-    padding: 5px;
-} */
 
 .definice{
     width: 97%;
@@ -640,8 +628,6 @@ details summary:hover, summary:active {
 }
 
 
-
-
 .accordion {
     background-color: #ddd;
     color: #444;
@@ -666,8 +652,9 @@ details summary:hover, summary:active {
   .panel {
     padding: 0 18px;
     display: none;
-    background-color: white;
-    overflow: hidden;
+    background-color: var(--bgcolor);
+    border-radius: var(--corners);
+    overflow: scroll;
   }
 
 
@@ -686,8 +673,60 @@ details summary:hover, summary:active {
 
 .whiteboard.test .question {
     font-weight: bold;
-    font-size: 1rem;
+    font-size: 1.1em;
     color: var(--highlight);
+}
+
+.whiteboard.test p {
+    text-indent: -30px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+
+.whiteboard.test label:checked {
+    color: var(--highlight);
+}
+
+input[type="radio"] {
+    appearance: none;
+    font: inherit;
+    color: var(--maincolor);
+    transform: translateY(-25%);
+
+    width: 20px;
+    height: 20px;
+    border: 0.2em solid currentColor;
+    border-radius: var(--corners);
+    box-sizing: border-box;
+}
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.5em;
+    height: 0.5em;
+    position: relative;
+    left: 0.142em;
+    top: 0.1em;
+
+    background-color: var(--highlight);
+    border-radius: var(--corners);
+
+    transform: scale(0);
+    display: grid;
+    /* box-shadow: inset 1em 1em teal; */
+}
+
+input[type="radio"]:hover {
+    border-color: white;
+}
+
+input[type="radio"]:checked {
+    border-color: var(--highlight);
+}
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+    transition: 60ms transform ease-out;
 }
 
 input[type="submit"] {
@@ -730,16 +769,19 @@ input[type="submit"]:hover{
 /* INDEX - UVODNI STRANKA STYLE */
 /* ----------------------------------------------------- */
 
+@keyframes moveleft { 100%{opacity: 1;
+    transform: translatex(0px)}};
+
 .anim_horizontal{
     opacity: 0;
     transform: translateX(30px);
-    animation: moveleft 1s ease-out forwards; /*0.5s*/
+    animation: moveleft 1s ease-out forwards; /*1s*/
 }
 
 .anim_vertical{
     opacity: 0;
     transform: translateY(30px);
-    animation: moveleft 1s ease-out forwards; /*0.5s*/
+    animation: moveleft 1s ease-out forwards; /*1s*/
 }
 
 
@@ -856,9 +898,6 @@ footer{
    margin-bottom: 5px;
    font-size: 12px;
 }
-
-@keyframes moveleft { 100%{opacity: 1;
-    transform: translatex(0px)}};
 
 
     
