@@ -29,378 +29,382 @@
         </div>
     </div>
 
-<!-- SIDE MENU -->
-
-<div id="menu" class="closed">
-    <button onclick="toggleMenu()"></button>
-
-    <div class="header">
-        Keplerovy zákony
-    </div>
-
-
-    <object type="text/html" data="menu.html" width="100%" height="100%">
-        <!-- fallback content if browser doesn't support <object> tag -->
-        <p>Your browser doesn't support the <code>object</code> tag.</p>
-    </object>
-
-</div>
 
 <!-- CONENT -->
        
-        <div class="main_content">
+    <div class="main_content" id="column">
 
-            <div class="whiteboard_title" id="section1">
-                <h2>Klíčové pojmy</h2>
+        <!-- SIDE MENU -->
+
+        <button id="menubutton" onclick="toggleMenu()"></button>
+
+        <div id="menu" class="">
+
+            <div class="header">
+                Keplerovy zákony
+            </div>
+
+
+            <object class="hide" type="text/html" data="menu.html" width="100%" height="100%">
+                <!-- fallback content if browser doesn't support <object> tag -->
+                <p>Your browser doesn't support the <code>object</code> tag.</p>
+            </object>
+
+        </div>
+
+        <!-- CONENT -->
+
+        <div class="whiteboard_title" id="section1">
+            <h2>Klíčové pojmy</h2>
+            
+            <div class="bookmark1">
+                <svg width="12" height="12">
+                    <path d="M   0   0
+                            L 12   0
+                            L 12 12
+                            L  6  8
+                            L   0 12
+                            Z"
+                            fill="#007BFF"/>
+                </svg>
+            </div>
+
+
+        </div>
+        <div class="whiteboard">
+
+            <p class="keywords"> 
+                <span>Země&nbsp;a&nbsp;její&nbsp;postavení&nbsp;ve&nbsp;vesmíru</span>
+                <span>Sluneční&nbsp;soustava</span>
+                <span>Pohyb&nbsp;planet</span>
+                <span>Keplerovy&nbsp;zákony</span>
+                <span>Johannes&nbsp;Kepler</span>
+                <span>Tycho&nbsp;Brahe</span>
+                <span>Kružnice</span>
+                <span>Elipsa</span>
+                <span>Hlavní&nbsp;poloosa</span>
+                <span>Vedlejší&nbsp;poloosa</span>
+                <span>Výstřednost</span>
+                <span>Oběžná&nbsp;doba</span>
+            </p>
+
+            <a href="#section2">
+                <div class="arrow-down"></div>
+            </a>
+
+        </div>
+
+        <div class="whiteboard_title" id="section2">
+            <h2>Doporučené předchozí znalosti</h2>
+
+            <div class="bookmark2">
+                <svg width="12" height="12">
+                    <path d="M   0   0
+                            L 12   0
+                            L 12 12
+                            L  6  8
+                            L   0 12
+                            Z"
+                            fill="#007BFF"/>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="whiteboard">
+
+            <div class="recom_knowledge">
+
+                <div class="recom_knowledge_title">
+                    ASTRONOMIE
+                </div>
+
+                <div class="recom_knowledge_text">
+                    <p>Sluneční soustava – Slunce a 8 planet</p>
+                </div>
+
+            </div>
+
+            <div class="recom_knowledge">
+
+                <div class="recom_knowledge_title">
+                    FYZIKA
+                </div>
+
+                <div class="recom_knowledge_text">
+                    <!-- <p>Hmotný bod a jeho trajektorie</p> -->
+                    <p>Gravitace – obecný jev</p>
+                </div>
+            </div>
+
+            <div class="recom_knowledge">
                 
-                <div class="bookmark1">
-                    <svg width="12" height="12">
-                        <path d="M   0   0
-                                L 12   0
-                                L 12 12
-                                L  6  8
-                                L   0 12
-                                Z"
-                                fill="#007BFF"/>
-                    </svg>
+                <div class="recom_knowledge_title">
+                    MATEMATIKA
                 </div>
 
-
-            </div>
-            <div class="whiteboard">
-
-                <p class="keywords"> 
-                    <span>Země&nbsp;a&nbsp;její&nbsp;postavení&nbsp;ve&nbsp;vesmíru</span>
-                    <span>Sluneční&nbsp;soustava</span>
-                    <span>Pohyb&nbsp;planet</span>
-                    <span>Keplerovy&nbsp;zákony</span>
-                    <span>Johannes&nbsp;Kepler</span>
-                    <span>Tycho&nbsp;Brahe</span>
-                    <span>Kružnice</span>
-                    <span>Elipsa</span>
-                    <span>Hlavní&nbsp;poloosa</span>
-                    <span>Vedlejší&nbsp;poloosa</span>
-                    <span>Výstřednost</span>
-                    <span>Oběžná&nbsp;doba</span>
-                </p>
-
-                <a href="#section2">
-                    <div class="arrow-down"></div>
-                </a>
-
-            </div>
-
-            <div class="whiteboard_title" id="section2">
-                <h2>Doporučené předchozí znalosti</h2>
-
-                <div class="bookmark2">
-                    <svg width="12" height="12">
-                        <path d="M   0   0
-                                L 12   0
-                                L 12 12
-                                L  6  8
-                                L   0 12
-                                Z"
-                                fill="#007BFF"/>
-                    </svg>
+                <div class="recom_knowledge_text">
+                    <p>Úpravy složených výrazů</p>
+                    <p>Mocniny a odmocniny</p>
+                    <p>Vyjařování neznámé z rovnice</p>
                 </div>
 
             </div>
 
-            <div class="whiteboard">
+            <a href="#section1">
+                <div class="arrow-up"></div>
+            </a>
 
-                <div class="recom_knowledge">
+            <a href="#section3">
+                <div class="arrow-down"></div>
+            </a>
 
-                    <div class="recom_knowledge_title">
-                        ASTRONOMIE
-                    </div>
+        </div>
 
-                    <div class="recom_knowledge_text">
-                        <p>Sluneční soustava – Slunce a 8 planet</p>
-                    </div>
 
+        <div class="whiteboard_title" id="section2">
+            <h2>Cílová skupina</h2>
+        </div>
+
+        <div class="whiteboard">
+
+            <div class="recom_knowledge">
+
+                <div class="recom_knowledge_title">
+                    Účastníci Astronomické olympiády
                 </div>
 
-                <div class="recom_knowledge">
-
-                    <div class="recom_knowledge_title">
-                        FYZIKA
-                    </div>
-
-                    <div class="recom_knowledge_text">
-                        <!-- <p>Hmotný bod a jeho trajektorie</p> -->
-                        <p>Gravitace – obecný jev</p>
-                    </div>
-                </div>
-
-                <div class="recom_knowledge">
-                    
-                    <div class="recom_knowledge_title">
-                        MATEMATIKA
-                    </div>
-
-                    <div class="recom_knowledge_text">
-                        <p>Úpravy složených výrazů</p>
-                        <p>Mocniny a odmocniny</p>
-                        <p>Vyjařování neznámé z rovnice</p>
-                    </div>
-
-                </div>
-
-                <a href="#section1">
-                    <div class="arrow-up"></div>
-                </a>
-
-                <a href="#section3">
-                    <div class="arrow-down"></div>
-                </a>
-
-            </div>
-
-
-            <div class="whiteboard_title" id="section2">
-                <h2>Cílová skupina</h2>
-            </div>
-
-            <div class="whiteboard">
-
-                <div class="recom_knowledge">
-
-                    <div class="recom_knowledge_title">
-                        Účastníci Astronomické olympiády
-                    </div>
-
-                    <div class="recom_knowledge_text">
-                        <p>Vhodné pro všechny kategorie, doporučené hlavně pro kategorii EF</p>
-                    </div>
-
-                </div>
-
-                <div class="recom_knowledge">
-
-                    <div class="recom_knowledge_title">
-                        Ostatní zájemci
-                    </div>
-
-                    <div class="recom_knowledge_text">
-                        <p>Kdokoliv se zájmem o astronomii a příbuzné obory</p>
-                    </div>
-
-                </div>
-            </div> 
-
-            <div class="whiteboard_title" id="section3">
-                <h2 id="johaneskepler">Johannes Kepler</h2>
-
-                <div class="bookmark3">
-                    <svg width="12" height="12">
-                        <path d="M   0   0
-                                L 12   0
-                                L 12 12
-                                L  6  8
-                                L   0 12
-                                Z"
-                                fill="#007BFF"/>
-                    </svg>
+                <div class="recom_knowledge_text">
+                    <p>Vhodné pro všechny kategorie, doporučené hlavně pro kategorii EF</p>
                 </div>
 
             </div>
 
-            <div class="whiteboard whiteparag">
-                <p> Celou touto kapitolou nás bude provázet jedno jméno a to slavného německého astronoma a matematika <b>Johanna Keplera</b> (1571–1630). Johannes Kepler se stal slavný a významný proto, že přispěl k našemu poznání, <b>jak a proč planety obíhají kolem Slunce</b>. </p>
-                <p> Kepler konkrétně odpověděl na tu část <i>jak</i> (což pomohlo později pochopit i <i>proč</i>) a své výsledky formuloval v podobě tří zákonů, kterým se planety při svém obíhání podřizují. Tyto zákony nesou na Keplerovu počest jeho jméno <i>tři Keplerovy zákony</i> a jim bude věnována celá tato kapitola.</p>
-                <div>
-                    <img src="ASSETS/1.2.1.-timeline.png" alt="Johanenes Kepler na časové ose" style="width:80%">
-                    <figcaption>Obr. 1 – Johannes Kepler na časové ose</figcaption>
+            <div class="recom_knowledge">
+
+                <div class="recom_knowledge_title">
+                    Ostatní zájemci
                 </div>
-                <a href="#section2">
-                    <div class="arrow-up"></div>
-                </a>
-                <a href="#section4">
-                    <div class="arrow-down"></div>
-                </a>
 
-                <details>
-                    <summary>více</summary>
-                        <p></p>
-                        <p>Na Keplerovu práci později navázal slavný anglický fyzik <i>sir Issac Newton</i> (1643–1727). Newton se snažil pochopit <i>gravitaci</i>, všudypřítomný jev, který spočívá ve <i>vzájemném přitahování všech těles k sobě</i> a to i přesto, že mohou být od sebe odděleny na velké vzdálenosti. </p>
-                        <p><i>Gravitace</i> je pak odpověď na otázku, <i>proč</i> se planety pohybují kolem Slunce – planety jsou ke Slunci přitahovány gravitací, která jim nedovolí odletět od Slunce nikam dál. </p>
-                        <p> Newton se snažil přitažlivost mezi tělesy popsat jednou rovnicí. Tato rovnice má být univerzální, tzn. platit mezi všemi tělesy ve vesmíru. Aniž bychom se tímto tématem teď zabývali více do hloubky, prozradíme, že tuto rovnici našel a to i díky Keplerově objevu – Newton totiž zvolil svůj <i>(Newtonův) gravitační zákon</i>, popsaný jednou rovnicí, tak, aby z něho Keplerovy zákony už jednoduše plynuly. </p>
-                        <p> Jak rovnice vypadá není pro nás v tuto chvíli důležité. Je ale zajímavé si všimnout, že nebýt Keplera a jeho klíčového objevu, <i>jak</i> se planety kolem Slunce pohybují, Newton by nedokázal svůj gravitační zákon objevit. </p> 
-                        <p> Vsuvku zatím opustíme a příběh o gravitaci si ponecháme na jindy.</p>
-                </details>
-
-            </div>
-
-
-            <div class="whiteboard_title " id="section4">
-                <h2>Postavení Země ve vesmíru</h2>
-
-                <div class="bookmark4">
-                    <svg width="12" height="12">
-                        <path d="M   0   0
-                                L 12   0
-                                L 12 12
-                                L  6  8
-                                L   0 12
-                                Z"
-                                fill="#007BFF"/>
-                    </svg>
+                <div class="recom_knowledge_text">
+                    <p>Kdokoliv se zájmem o astronomii a příbuzné obory</p>
                 </div>
 
             </div>
-            <div class="whiteboard whiteparag">
-                <p>Předtím než se na Keplerovy zákony plně vrhneme, povězme si trochu více o naší mateřské planetě Zemi a jejím postavení ve vesmíru. </p>
-                <p>Dnes víme, že <b>Země je jedna z 8 planet, které společně obíhají okolo Slunce</b>. Země je třetí planeta nejblíže Slunci, hned po Merkuru a Venuši. Dál než Země od Slunce jsou pak planety Mars, Jupiter, Saturn, Uran a Neptun.</p>
-                <div>
-                    <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
-                    <figcaption>Obr.2 – Slunce a jeho 8 planet</figcaption>
-                </div>
-                <p>Vzpomeňme si, že Slunce je <b>hvězda</b> – obrovská koule rozžhaveného plynu, která je mnohonásobně těžší než planety, které kolem ní obíhají.</p>
-                <div>
-                <img src="ASSETS/sun.png" alt="Slunce, obrázek NASA">
-                    <figcaption>Obr.3 – Slunce (obrovský a velmi horký oblak plynu, který je mnohem těžší než dokonce všechny obíhající planety). <a href="https://helioviewer.org/" target="_blank" style="color: blue">Zdroj obrázku.</a></figcaption>
-                </div>
-                <p>Slunce spolu s dalšími stovkami miliard hvězd tvoří tzv. <b>galaxii</b>. Naší galaxii nazýváme prostě <i>Galaxie</i> nebo <i>Mléčná dráha</i>.</p>
-                <div>
-                    <img src="ASSETS/galaxy_and_sun.jpg" alt="Galaxie a pozice Slunce v ní">
-                    <figcaption>Obr.4 – Ilustrace naší mateřské galaxie a přibližně umístění Slunce v ní. <a href="https://www.jpl.nasa.gov/images/pia10748-our-milky-way-gets-a-makeover-artist-concept" target="_blank" style="color: blue">Zdroj obrázku.</a></figcaption>
-                </div>
-                <p>Galaxie spolu s dalšími galaxiemi tvoří další uskupení a struktury. Největší struktura ve vesmíru je tzv. <b>Kosmická síť</b>, de facto pavučina upletená z galaxií.</p>
-                <div>
-                    <img src="ASSETS/Cosmic_web.jpg" alt="Kosmická síť">
-                    <figcaption>Obr.5 – Kosmická síť (jeden její světlý bod představuje galaxii/menší shluk galaxií). <a href="https://simple.wikipedia.org/wiki/Large-scale_structure_of_the_Universe" target="_blank" style="color: blue">Zdroj obrázku.</a></figcaption>
-                </div>
-                
-                <p>Možná jste tolik o postavení Země ve vesmíru věděli už předtím. Možná dokonce by se mohl najít někdo, kdo by tuto znalost mohl považovat za naprostou <i>„samozřejmost“</i>. Můžete ale věřit tomu, že tomu ne vždy tak bylo. Ještě za Keplerovy éry (16.–17. století!) si nebyli astronomové jistí, zda se Země pohybuje kolem Slunce, nebo Slunce kolem Země. Pojďme si o tom povědět trochu více.</p>
-
-                <a href="#section3">
-                    <div class="arrow-up"></div>
-                </a>
-                <a href="#section5">
-                    <div class="arrow-down"></div>
-                </a>
-            </div>
-
-            <div class="whiteboard_title " id="section5">
-                <h2>Heliocentrická a Geocentrická představa</h2>
-
-                <div class="bookmark5">
-                    <svg width="12" height="12">
-                        <path d="M   0   0
-                                L 12   0
-                                L 12 12
-                                L  6  8
-                                L   0 12
-                                Z"
-                                fill="#007BFF"/>
-                    </svg>
-                </div>
-
-            </div>
-
-            <div class="whiteboard whiteparag">
-                <p>Ještě ani v 17. století nebyli všichni astronomové přesvědčeni o tom, že se Země pohybuje kolem Slunce. Panovaly dvě představy o „uspořádání světa“ – představa <b>heliocentrická</b> a <b>geocentrická</b>. Ani jedna není dnes už platnou představou o postavení Země ve vesmíru, sehrály však v naší cestě za poznáním pravdy důležitou úlohu.</p>
-                <p>Podle heliocentrické představy je <b>Slunce středem vesmíru</b>, kolem kterého všechno ostatní obíhá, včetně Země.</p>
-                <div>
-                    <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
-                    <figcaption>Obr.6 – Zjednodušená ilustrace heliocentrického systému</figcaption>
-                </div>
-                <p>Jinou a starší představou o uspořádání světa je představa geocentrická. Podle té je <b> Země středem vesmíru</b> a bodem, kolem něhož všechno ostatní obíhá a to včetně Slunce.</p>
-                <div>
-                    <img src="ASSETS/1.2.2.-model-geocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
-                    <figcaption>Obr.7 – Zjednodušená ilustrace geocentrického systému</figcaption>
-                </div>
-
-                <p>Jak jsme již řekli, Země obíhá Slunce a stejně tak i dalších 7 planet (včetně dalších menších těles jako jsou komety, asteroidy, planetky atp.), není ale středem vesmíru. Přesto heliocentrická představa představovala určitý pokrok kupředu správným směrem (vůči geocentrické představě, jejíž původ sahá až do středověku).</p>
-
-                <p>Vraťme se teď ke Keplerovi. Kepler byl zastáncem heliocentrické představy a s touto představou, kdy planety obíhají kolem Slunce, údajům z pozorování planet na noční obloze a mnohaletém bádání nakonec odhalil pravidla (či <i>zákonitosti</i>), které všechny planety při svém obíhání splňují. Jak už víme, jsou tři a jmenují se po <i>Keplerovi</i> na jeho počest.</p>
-                
-                <a href="#section4">
-                    <div class="arrow-up"></div>
-                </a>
-                <a href="#section6">
-                    <div class="arrow-down"></div>
-                </a>
-            </div>
-
-
-            <div class="whiteboard_title " id="section6">
-                <h2>K procvičení</h2>
-
-                <div class="bookmark6">
-                    <svg width="12" height="12">
-                        <path d="M   0   0
-                                L 12   0
-                                L 12 12
-                                L  6  8
-                                L   0 12
-                                Z"
-                                fill="#007BFF"/>
-                    </svg>
-                </div>
-
-            </div>
-
-            <div class="whiteboard test">
-                
-                <p class="question">1. Podle Heliocentrické představy... </p>
-                <p><input type="radio" name="question1" id="q11"> <label for="q11"> byl svět stvořen antickým bohem Heliosem. </label> </p>
-                <p><input type="radio" name="question1" id="q12"> <label for="q12"> má nejširší zastoupení prvků ve vesmíru helium. </label></p>
-                <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> není středem vesmíru Země, ale Slunce, kolem kterého všechno ostatní obíhá. </label></p>                   
-                <br>
-                <p class="question">2. Geocentrická představa... </p>
-                <p><input type="radio" name="question2" id="q21"> <label for="q21"> je současná představa o uspořádání vesmíru. </label></p>
-                <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> je oponentem heliocentrického modelu, který staví do centra vesmíru Slunce. </label></p>
-                <p><input type="radio" name="question2" id="q23">  <label for="q23"> vznikla jako vylepšení heliocentrického modelu. </label></p>
-                <br>
-                <p class="question">3. Současná představa o uspořádání světa... </p>
-                <p><input type="radio" name="question3" id="q31"> <label for="q31"> je ta geocentrická. </label></p>
-                <p><input type="radio" name="question3" id="q32"> <label for="q32"> je ta heliocentrická. </label></p>
-                <p><input type="radio" name="question3" id="correct3"> <label for="correct3"> není ani geocentrická, ani heliocentrická. </label></p>
-                <br>
-                <p class="question">4. Slunce je... </p>
-                <p><input type="radio" name="question4" id="correct4"> <label for="correct4"> jedna z mnoha hvězd, která tvoří naši galaxii Mléčná dráha. </label></p>
-                <p><input type="radio" name="question4" id="q42"> <label for="q42"> osamocená hvězda, která s dalšímu hvězdami netvoří žádné struktury. </label></p>
-                <p><input type="radio" name="question4" id="q43"> <label for="q43"> koule chladného plynu, která je mnohem těžší než planety, které ji obíhají. </label></p>
-                <br>
-                <p><input type="submit" name="submit" value="Zkontrolovat odpovědi" onclick="result()"></p>
-
-                <!--
-                <p id="answers"></p>
-                <p id="score"></p>
-                -->
-
-
-                <a href="#section4">
-                    <div class="arrow-up"></div>
-                </a>
-            </div>
-
-            <div class="navigation">
-                <!-- <a href=""> -->
-                    <button style="visibility: hidden;"></button>
-                <!-- </a> -->
-
-                <a href="2.trocha_historie_content.html">
-                    <button class="next"></button>
-                </a>
-            </div>
-
-            <div class="pagefooter">
-                <div>
-                    <a href="https://olympiada.astro.cz/" target="_blank"><img src="ASSETS/astroolympiada_logo.png" alt="logo AO"> </a>
-                    <a href="https://cuni.cz/UK-1.html" target="_blank"><img src="ASSETS/UK_logo.png" alt="logo UKa"></a>
-                    <a href="https://uka.cuni.cz/UKA-1.html" target="_blank"><img src="ASSETS/UKA_logo.png" alt="logo UKa"></a>
-                </div>
-                <div>
-                    Podpořeno grantem UKa! |
-                    astrogateproject@gmail.com |
-                    &#169; 2023 AstroGate team
-                </div>
-            </div>
-
         </div> 
+
+        <div class="whiteboard_title" id="section3">
+            <h2 id="johaneskepler">Johannes Kepler</h2>
+
+            <div class="bookmark3">
+                <svg width="12" height="12">
+                    <path d="M   0   0
+                            L 12   0
+                            L 12 12
+                            L  6  8
+                            L   0 12
+                            Z"
+                            fill="#007BFF"/>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="whiteboard whiteparag">
+            <p> Celou touto kapitolou nás bude provázet jedno jméno a to slavného německého astronoma a matematika <b>Johanna Keplera</b> (1571–1630). Johannes Kepler se stal slavný a významný proto, že přispěl k našemu poznání, <b>jak a proč planety obíhají kolem Slunce</b>. </p>
+            <p> Kepler konkrétně odpověděl na tu část <i>jak</i> (což pomohlo později pochopit i <i>proč</i>) a své výsledky formuloval v podobě tří zákonů, kterým se planety při svém obíhání podřizují. Tyto zákony nesou na Keplerovu počest jeho jméno <i>tři Keplerovy zákony</i> a jim bude věnována celá tato kapitola.</p>
+            <div>
+                <img src="ASSETS/1.2.1.-timeline.png" alt="Johanenes Kepler na časové ose" style="width:80%">
+                <figcaption>Obr. 1 – Johannes Kepler na časové ose</figcaption>
+            </div>
+            <a href="#section2">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section4">
+                <div class="arrow-down"></div>
+            </a>
+
+            <details>
+                <summary>více</summary>
+                    <p></p>
+                    <p>Na Keplerovu práci později navázal slavný anglický fyzik <i>sir Issac Newton</i> (1643–1727). Newton se snažil pochopit <i>gravitaci</i>, všudypřítomný jev, který spočívá ve <i>vzájemném přitahování všech těles k sobě</i> a to i přesto, že mohou být od sebe odděleny na velké vzdálenosti. </p>
+                    <p><i>Gravitace</i> je pak odpověď na otázku, <i>proč</i> se planety pohybují kolem Slunce – planety jsou ke Slunci přitahovány gravitací, která jim nedovolí odletět od Slunce nikam dál. </p>
+                    <p> Newton se snažil přitažlivost mezi tělesy popsat jednou rovnicí. Tato rovnice má být univerzální, tzn. platit mezi všemi tělesy ve vesmíru. Aniž bychom se tímto tématem teď zabývali více do hloubky, prozradíme, že tuto rovnici našel a to i díky Keplerově objevu – Newton totiž zvolil svůj <i>(Newtonův) gravitační zákon</i>, popsaný jednou rovnicí, tak, aby z něho Keplerovy zákony už jednoduše plynuly. </p>
+                    <p> Jak rovnice vypadá není pro nás v tuto chvíli důležité. Je ale zajímavé si všimnout, že nebýt Keplera a jeho klíčového objevu, <i>jak</i> se planety kolem Slunce pohybují, Newton by nedokázal svůj gravitační zákon objevit. </p> 
+                    <p> Vsuvku zatím opustíme a příběh o gravitaci si ponecháme na jindy.</p>
+            </details>
+
+        </div>
+
+
+        <div class="whiteboard_title " id="section4">
+            <h2>Postavení Země ve vesmíru</h2>
+
+            <div class="bookmark4">
+                <svg width="12" height="12">
+                    <path d="M   0   0
+                            L 12   0
+                            L 12 12
+                            L  6  8
+                            L   0 12
+                            Z"
+                            fill="#007BFF"/>
+                </svg>
+            </div>
+
+        </div>
+        <div class="whiteboard whiteparag">
+            <p>Předtím než se na Keplerovy zákony plně vrhneme, povězme si trochu více o naší mateřské planetě Zemi a jejím postavení ve vesmíru. </p>
+            <p>Dnes víme, že <b>Země je jedna z 8 planet, které společně obíhají okolo Slunce</b>. Země je třetí planeta nejblíže Slunci, hned po Merkuru a Venuši. Dál než Země od Slunce jsou pak planety Mars, Jupiter, Saturn, Uran a Neptun.</p>
+            <div>
+                <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
+                <figcaption>Obr.2 – Slunce a jeho 8 planet</figcaption>
+            </div>
+            <p>Vzpomeňme si, že Slunce je <b>hvězda</b> – obrovská koule rozžhaveného plynu, která je mnohonásobně těžší než planety, které kolem ní obíhají.</p>
+            <div>
+            <img src="ASSETS/sun.png" alt="Slunce, obrázek NASA">
+                <figcaption>Obr.3 – Slunce (obrovský a velmi horký oblak plynu, který je mnohem těžší než dokonce všechny obíhající planety). <a href="https://helioviewer.org/" target="_blank" style="color: blue">Zdroj obrázku.</a></figcaption>
+            </div>
+            <p>Slunce spolu s dalšími stovkami miliard hvězd tvoří tzv. <b>galaxii</b>. Naší galaxii nazýváme prostě <i>Galaxie</i> nebo <i>Mléčná dráha</i>.</p>
+            <div>
+                <img src="ASSETS/galaxy_and_sun.jpg" alt="Galaxie a pozice Slunce v ní">
+                <figcaption>Obr.4 – Ilustrace naší mateřské galaxie a přibližně umístění Slunce v ní. <a href="https://www.jpl.nasa.gov/images/pia10748-our-milky-way-gets-a-makeover-artist-concept" target="_blank" style="color: blue">Zdroj obrázku.</a></figcaption>
+            </div>
+            <p>Galaxie spolu s dalšími galaxiemi tvoří další uskupení a struktury. Největší struktura ve vesmíru je tzv. <b>Kosmická síť</b>, de facto pavučina upletená z galaxií.</p>
+            <div>
+                <img src="ASSETS/Cosmic_web.jpg" alt="Kosmická síť">
+                <figcaption>Obr.5 – Kosmická síť (jeden její světlý bod představuje galaxii/menší shluk galaxií). <a href="https://simple.wikipedia.org/wiki/Large-scale_structure_of_the_Universe" target="_blank" style="color: blue">Zdroj obrázku.</a></figcaption>
+            </div>
+            
+            <p>Možná jste tolik o postavení Země ve vesmíru věděli už předtím. Možná dokonce by se mohl najít někdo, kdo by tuto znalost mohl považovat za naprostou <i>„samozřejmost“</i>. Můžete ale věřit tomu, že tomu ne vždy tak bylo. Ještě za Keplerovy éry (16.–17. století!) si nebyli astronomové jistí, zda se Země pohybuje kolem Slunce, nebo Slunce kolem Země. Pojďme si o tom povědět trochu více.</p>
+
+            <a href="#section3">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section5">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+        <div class="whiteboard_title " id="section5">
+            <h2>Heliocentrická a Geocentrická představa</h2>
+
+            <div class="bookmark5">
+                <svg width="12" height="12">
+                    <path d="M   0   0
+                            L 12   0
+                            L 12 12
+                            L  6  8
+                            L   0 12
+                            Z"
+                            fill="#007BFF"/>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="whiteboard whiteparag">
+            <p>Ještě ani v 17. století nebyli všichni astronomové přesvědčeni o tom, že se Země pohybuje kolem Slunce. Panovaly dvě představy o „uspořádání světa“ – představa <b>heliocentrická</b> a <b>geocentrická</b>. Ani jedna není dnes už platnou představou o postavení Země ve vesmíru, sehrály však v naší cestě za poznáním pravdy důležitou úlohu.</p>
+            <p>Podle heliocentrické představy je <b>Slunce středem vesmíru</b>, kolem kterého všechno ostatní obíhá, včetně Země.</p>
+            <div>
+                <img src="ASSETS/1.2.2.-model-heliocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
+                <figcaption>Obr.6 – Zjednodušená ilustrace heliocentrického systému</figcaption>
+            </div>
+            <p>Jinou a starší představou o uspořádání světa je představa geocentrická. Podle té je <b> Země středem vesmíru</b> a bodem, kolem něhož všechno ostatní obíhá a to včetně Slunce.</p>
+            <div>
+                <img src="ASSETS/1.2.2.-model-geocentric_system.svg" alt="Zjednodušená ilustrace geocentrického systému">
+                <figcaption>Obr.7 – Zjednodušená ilustrace geocentrického systému</figcaption>
+            </div>
+
+            <p>Jak jsme již řekli, Země obíhá Slunce a stejně tak i dalších 7 planet (včetně dalších menších těles jako jsou komety, asteroidy, planetky atp.), není ale středem vesmíru. Přesto heliocentrická představa představovala určitý pokrok kupředu správným směrem (vůči geocentrické představě, jejíž původ sahá až do středověku).</p>
+
+            <p>Vraťme se teď ke Keplerovi. Kepler byl zastáncem heliocentrické představy a s touto představou, kdy planety obíhají kolem Slunce, údajům z pozorování planet na noční obloze a mnohaletém bádání nakonec odhalil pravidla (či <i>zákonitosti</i>), které všechny planety při svém obíhání splňují. Jak už víme, jsou tři a jmenují se po <i>Keplerovi</i> na jeho počest.</p>
+            
+            <a href="#section4">
+                <div class="arrow-up"></div>
+            </a>
+            <a href="#section6">
+                <div class="arrow-down"></div>
+            </a>
+        </div>
+
+
+        <div class="whiteboard_title " id="section6">
+            <h2>K procvičení</h2>
+
+            <div class="bookmark6">
+                <svg width="12" height="12">
+                    <path d="M   0   0
+                            L 12   0
+                            L 12 12
+                            L  6  8
+                            L   0 12
+                            Z"
+                            fill="#007BFF"/>
+                </svg>
+            </div>
+
+        </div>
+
+        <div class="whiteboard test">
+            
+            <p class="question">1. Podle Heliocentrické představy... </p>
+            <p><input type="radio" name="question1" id="q11"> <label for="q11"> byl svět stvořen antickým bohem Heliosem. </label> </p>
+            <p><input type="radio" name="question1" id="q12"> <label for="q12"> má nejširší zastoupení prvků ve vesmíru helium. </label></p>
+            <p><input type="radio" name="question1" id="correct1"> <label for="correct1"> není středem vesmíru Země, ale Slunce, kolem kterého všechno ostatní obíhá. </label></p>                   
+            <br>
+            <p class="question">2. Geocentrická představa... </p>
+            <p><input type="radio" name="question2" id="q21"> <label for="q21"> je současná představa o uspořádání vesmíru. </label></p>
+            <p><input type="radio" name="question2" id="correct2"> <label for="correct2"> je oponentem heliocentrického modelu, který staví do centra vesmíru Slunce. </label></p>
+            <p><input type="radio" name="question2" id="q23">  <label for="q23"> vznikla jako vylepšení heliocentrického modelu. </label></p>
+            <br>
+            <p class="question">3. Současná představa o uspořádání světa... </p>
+            <p><input type="radio" name="question3" id="q31"> <label for="q31"> je ta geocentrická. </label></p>
+            <p><input type="radio" name="question3" id="q32"> <label for="q32"> je ta heliocentrická. </label></p>
+            <p><input type="radio" name="question3" id="correct3"> <label for="correct3"> není ani geocentrická, ani heliocentrická. </label></p>
+            <br>
+            <p class="question">4. Slunce je... </p>
+            <p><input type="radio" name="question4" id="correct4"> <label for="correct4"> jedna z mnoha hvězd, která tvoří naši galaxii Mléčná dráha. </label></p>
+            <p><input type="radio" name="question4" id="q42"> <label for="q42"> osamocená hvězda, která s dalšímu hvězdami netvoří žádné struktury. </label></p>
+            <p><input type="radio" name="question4" id="q43"> <label for="q43"> koule chladného plynu, která je mnohem těžší než planety, které ji obíhají. </label></p>
+            <br>
+            <p><input type="submit" name="submit" value="Zkontrolovat odpovědi" onclick="result()"></p>
+
+            <!--
+            <p id="answers"></p>
+            <p id="score"></p>
+            -->
+
+
+            <a href="#section4">
+                <div class="arrow-up"></div>
+            </a>
+        </div>
+
+        <div class="navigation">
+            <!-- <a href=""> -->
+                <button style="visibility: hidden;"></button>
+            <!-- </a> -->
+
+            <a href="2.trocha_historie_content.html">
+                <button class="next"></button>
+            </a>
+        </div>
+
+        <div class="pagefooter">
+            <div>
+                <a href="https://olympiada.astro.cz/" target="_blank"><img src="ASSETS/astroolympiada_logo.png" alt="logo AO"> </a>
+                <a href="https://cuni.cz/UK-1.html" target="_blank"><img src="ASSETS/UK_logo.png" alt="logo UKa"></a>
+                <a href="https://uka.cuni.cz/UKA-1.html" target="_blank"><img src="ASSETS/UKA_logo.png" alt="logo UKa"></a>
+            </div>
+            <div>
+                Podpořeno grantem UKa! |
+                astrogateproject@gmail.com |
+                &#169; 2023 AstroGate team
+            </div>
+        </div>
+
+    </div> 
 
 
 

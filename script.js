@@ -13,11 +13,12 @@
 
 
 // ********************
-// WINDOW SIZES SCRIPTS
+// RESPONSIVITY SCRIPTS
 // ********************
 
 
     const menu = document.getElementById("menu");
+    const menubutton = document.getElementById("menubutton");
 
     var maxColWidth = (getComputedStyle(document.documentElement).getPropertyValue('--maxcolw'));
     //convert to integer
@@ -30,7 +31,13 @@
     minColWidth = parseInt(minColWidth);
     // console.log('minColWidth', minColWidth);
 
-    var menuWidth = 300;
+    var menuWidth = (getComputedStyle(document.documentElement).getPropertyValue('--menuWidth'));
+    //convert to integer
+    menuWidth = menuWidth.substring(0, menuWidth.length - 2);
+    menuWidth = parseInt(menuWidth);
+    // console.log('minColWidth', minColWidth);
+
+    var column = document.getElementById("column");
 
     var astrogateMinSize = 128;
 
@@ -71,7 +78,7 @@
         }
     });
 
-    //changes titles progressbard based on scroll
+    //changes title progressbard with based on scroll
     window.addEventListener('scroll', function() {
         var scrollPercentage = (document.documentElement.scrollTop + document.body.scrollTop) / (document.documentElement.scrollHeight - document.documentElement.clientHeight) * 100;
         document.getElementById('pageprogressbar').style.width = scrollPercentage + '%';
@@ -80,37 +87,59 @@
  
 // SIDE MENU SCIRPTS
 
-    var menuTreshold = 500;
-
-    // RESIZES side menu based on the window width
-    document.documentElement.style.setProperty('--menusize', window.innerWidth < menuTreshold ? '100%' : (menuWidth + "px"));
-
-    window.addEventListener('resize', function(event) {
-        if (window.innerWidth < menuTreshold) {
-            document.documentElement.style.setProperty('--menusize', "100%");
-            // console.log('window.innerWidth', window.innerWidth);
-        } 
-
-        else if (window.innerWidth >= menuTreshold) {
-            document.documentElement.style.setProperty('--menusize', (menuWidth + "px"));
-            // console.log('window.innerWidth', window.innerWidth);
-        }
-    });
-
-    //checks if the menu should load collapsed on small screens
-        if (window.innerWidth < (maxColWidth + (2 * menuWidth))) {
-            menu.classList.add("closed");
-
-        } else {
-      menu.classList.remove("closed");
-    }
-
+    var menuTreshold = maxColWidth + (2 * menuWidth);
     
     // This is for the button on the side menu to close and open it
     function toggleMenu() {
         if (menu.classList.contains("closed")) {
             menu.classList.remove("closed");
+            menubutton.classList.remove("closed");
         }  else {
             menu.classList.add("closed");
+            menubutton.classList.add("closed");
         }
     }
+
+    // RESIZES side menu based on the window width on load
+    // document.documentElement.style.setProperty('--menuWidth', window.innerWidth < menuTreshold ? '100%' : (menuWidth + "px"));
+
+    window.addEventListener('resize', function(event) {
+        if (window.innerWidth < menuTreshold) {
+            menu.classList.add("smallscreen");
+            menubutton.classList.add("smallscreen");
+
+            menubutton.style.translate = column.offsetWidth - 36 + "px";
+
+            // console.log(column.offsetWidth);
+        } 
+
+        else {
+            menu.classList.remove("smallscreen");
+            menubutton.classList.remove("smallscreen");
+
+            menubutton.style.translate = -60 + "px";
+
+            menu.classList.remove("closed");
+            menubutton.classList.remove("closed");
+            // console.log('window.innerWidth', window.innerWidth);
+        }
+    });
+
+    //checks if the menu should load collapsed on small screens
+        if (window.innerWidth < menuTreshold) {
+            menu.classList.add("closed");
+            menubutton.classList.add("closed");
+            
+            menu.classList.add("smallscreen");
+            menubutton.classList.add("smallscreen");
+
+            menubutton.style.translate = column.offsetWidth - 36 + "px";
+        } 
+        // else {
+        //     menu.classList.remove("closed");
+        //     menu.classList.remove("smallscreen");
+        //     menubutton.classList.remove("closed");
+
+        //     }
+
+    
