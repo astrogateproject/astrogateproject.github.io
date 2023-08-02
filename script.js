@@ -101,27 +101,25 @@
     }
 
     // RESIZES side menu based on the window width on load
-    // document.documentElement.style.setProperty('--menuWidth', window.innerWidth < menuTreshold ? '100%' : (menuWidth + "px"));
 
     window.addEventListener('resize', function(event) {
         if (window.innerWidth < menuTreshold) {
             menu.classList.add("smallscreen");
             menubutton.classList.add("smallscreen");
 
-            menubutton.style.translate = column.offsetWidth - 36 + "px";
-
-            // console.log(column.offsetWidth);
+            menu.style.width = column.offsetWidth + "px";
+            menubutton.style.translate = column.offsetWidth - menubutton.offsetWidth + "px";
         } 
 
         else {
             menu.classList.remove("smallscreen");
             menubutton.classList.remove("smallscreen");
 
-            menubutton.style.translate = -60 + "px";
-
             menu.classList.remove("closed");
             menubutton.classList.remove("closed");
-            // console.log('window.innerWidth', window.innerWidth);
+
+            menu.style.width = "var(--menuWidth)";
+            menubutton.style.translate = "calc(var(--globalpadding)*-1 - var(--size))";
         }
     });
 
@@ -133,13 +131,8 @@
             menu.classList.add("smallscreen");
             menubutton.classList.add("smallscreen");
 
-            menubutton.style.translate = column.offsetWidth - 36 + "px";
+            menu.style.width = column.offsetWidth + "px";
+            menubutton.style.translate = column.offsetWidth - menubutton.offsetWidth + "px";
         } 
-        // else {
-        //     menu.classList.remove("closed");
-        //     menu.classList.remove("smallscreen");
-        //     menubutton.classList.remove("closed");
-
-        //     }
 
     

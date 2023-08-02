@@ -150,6 +150,8 @@ body{
     position: relative;
     bottom: calc(-50% + 1px);
     border-radius: 2px;
+
+    z-index: 2000;
 }
 
 
@@ -181,21 +183,30 @@ body{
     font-weight: bold;
 
     padding: 5px 5px;
-    transition: 0.4s ease-in-out;
+    transition: 
+        background-color 0.4s ease-in-out,
+        top 0.1s ease-in-out,
+        translate 0.1s ease-in-out;
     /* transition-property: background-color, left, top, width, height, margin-top, border-radius; */
-    transition-property: all;
+    /* transition-property: all; */
 
     z-index: 200;
 }
 
 #menubutton.smallscreen {
-    top: calc(var(--headerh) + var(--menuTop));
+    top: 0;
     translate: calc(var(--maxcolw) - var(--headerh));
+
+    transition: 
+        background-color 0.4s ease-in-out,
+        top 0.1s ease-in-out,
+        translate 0.1s ease-in-out;
 
 }
 
 #menubutton:hover {
     color: var(--highlight);
+    transition: color 0.1s;
 }
 
 #menubutton::before {
@@ -246,6 +257,10 @@ body{
     background-color: var(--maincolor);
 }
 
+#menubutton.smallscreen.closed {
+    background-color: #ffffff00;
+}
+
 
 #menubutton.closed::before {
     left: 100%;
@@ -255,7 +270,7 @@ body{
     left: 0;
 }
 
-    /* MENU CONTENT */
+    /* MENU HOLDER */
 
 #menu {
     /* border: 1px solid yellow; */
@@ -271,15 +286,16 @@ body{
 
     border-radius: var(--corners);
     
-    background-color: var(--maincolora);
+    background-color: var(--maincolor);
     /* backdrop-filter: blur(10px); */
 
     overflow: visible;
     transition: 
-        opacity 0.3s ease-in-out,
-        width 0.3s ease-in-out,
+        opacity 0.3s ease-in-out 0.2s,
+        width 0.1s ease-in-out,
         top 0.3s ease-in-out,
         translate 0.3s ease-in-out,
+        background-color 0.3s ease-in-out 0.2s,
         scale 0.3s ease-in-out;
         
     transform-origin: right;
@@ -288,12 +304,14 @@ body{
 }
 
 #menu.smallscreen {
-    top: calc(var(--headerh) + var(--menuTop));
+    top: var(--headerh);
     translate: 0;
     width: var(--maxcolw);
-    max-width: var(--maxcolw);
-    min-width: var(--mincolw);
+    background-color: var(--maincolora);
 
+    border-radius: 0px 0px var(--corners) var(--corners);
+
+    transform-origin: right;
 }
 
 #menu.closed {
@@ -303,19 +321,21 @@ body{
 
     transition: 
         opacity 0.3s ease-in-out 0.2s,
-        scale 0.3s ease-in-out 0.1s;
+        background-color 0.3s ease-in-out,
+        translate 0.3s ease-in-out 0.2s,
+        scale 0.3s ease-in-out 0.2s;
 }
 
-#menu .hide {
+#menu object {
     opacity: 100%;
     translate: 0px 0px;
     transition: 
-        opacity 0.2s ease-in-out 0.2s,
-        translate 0.2s ease-in-out 0.2s;
+        opacity 0.2s ease-in-out 0.3s,
+        translate 0.2s ease-in-out 0.3s;
 
 }
 
-#menu.closed .hide {
+#menu.closed object {
     opacity: 0%;
     translate: 0px 20px;
     transition: 
@@ -337,7 +357,22 @@ body{
     align-items: center;
     color: var(--textcolor); 
     font-weight: bold;
+
+    transition: 
+        background-color 1s ease-in-out 0.2s;
 }
+
+#menu.smallscreen .header {
+    border-radius: 0px;
+}
+
+#menu.closed .header {
+    background-color: var(--maincolor);
+    transition: 
+        background-color 0.2s ease-in-out;
+}
+
+    /* MENU CONTENT IN THE OBJECT */
 
 .menucontent {
     color: var(--textcolor);
